@@ -20,14 +20,14 @@
       return h('svg', {
         staticClass: 'icon md-icon',
         'class': this.className,
-        domProps: {
+        attrs: {
           width: this.width,
           height: this.height,
           viewBox: this.viewBox,
           xmlns: 'http://www.w3.org/2000/svg'
         }
       }, h('path', {
-        domProps: {
+        attrs: {
           d: '{{path}}'
         }
       }));
