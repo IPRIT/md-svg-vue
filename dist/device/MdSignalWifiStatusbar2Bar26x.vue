@@ -1,0 +1,36 @@
+<script>
+  export default {
+    name: 'md-signal-wifi-statusbar-2-bar-26-x',
+
+    functional: true,
+
+    serverCacheKey: _ => 'md-signal-wifi-statusbar-2-bar-26-x',
+
+    render (h, { props = {} }) {
+      const {
+        className,
+        width = 24,
+        height = 24,
+        viewBox = '0 0 24 24'
+      } = props;
+
+      return h('svg', {
+        staticClass: 'icon md-icon',
+        'class': className,
+        attrs: {
+          width: width,
+          height: height,
+          viewBox: viewBox,
+          xmlns: 'http://www.w3.org/2000/svg'
+        }
+      }, [
+        h('path', {
+          attrs: {
+            d: 'M13.01 21.99L25.58 6.32C25.1 5.96 20.26 2 13 2S.9 5.96.42 6.32l12.57 15.66.01.02.01-.01z"/><path d="M13.01 21.99l7.54-9.4C20.26 12.38 17.36 10 13 10c-4.36 0-7.26 2.38-7.55 2.59l7.54 9.4h.02z'
+          }
+        })
+      ]);
+    }
+  };
+</script>
+

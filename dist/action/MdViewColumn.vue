@@ -1,0 +1,36 @@
+<script>
+  export default {
+    name: 'md-view-column',
+
+    functional: true,
+
+    serverCacheKey: _ => 'md-view-column',
+
+    render (h, { props = {} }) {
+      const {
+        className,
+        width = 24,
+        height = 24,
+        viewBox = '0 0 24 24'
+      } = props;
+
+      return h('svg', {
+        staticClass: 'icon md-icon',
+        'class': className,
+        attrs: {
+          width: width,
+          height: height,
+          viewBox: viewBox,
+          xmlns: 'http://www.w3.org/2000/svg'
+        }
+      }, [
+        h('path', {
+          attrs: {
+            d: 'M10 18h5V5h-5v13zm-6 0h5V5H4v13zM16 5v13h5V5h-5z'
+          }
+        })
+      ]);
+    }
+  };
+</script>
+

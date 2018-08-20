@@ -1,0 +1,36 @@
+<script>
+  export default {
+    name: 'md-signal-cellular-null',
+
+    functional: true,
+
+    serverCacheKey: _ => 'md-signal-cellular-null',
+
+    render (h, { props = {} }) {
+      const {
+        className,
+        width = 24,
+        height = 24,
+        viewBox = '0 0 24 24'
+      } = props;
+
+      return h('svg', {
+        staticClass: 'icon md-icon',
+        'class': className,
+        attrs: {
+          width: width,
+          height: height,
+          viewBox: viewBox,
+          xmlns: 'http://www.w3.org/2000/svg'
+        }
+      }, [
+        h('path', {
+          attrs: {
+            d: 'M20 6.83V20H6.83L20 6.83M22 2L2 22h20V2z'
+          }
+        })
+      ]);
+    }
+  };
+</script>
+

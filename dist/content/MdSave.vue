@@ -1,0 +1,36 @@
+<script>
+  export default {
+    name: 'md-save',
+
+    functional: true,
+
+    serverCacheKey: _ => 'md-save',
+
+    render (h, { props = {} }) {
+      const {
+        className,
+        width = 24,
+        height = 24,
+        viewBox = '0 0 24 24'
+      } = props;
+
+      return h('svg', {
+        staticClass: 'icon md-icon',
+        'class': className,
+        attrs: {
+          width: width,
+          height: height,
+          viewBox: viewBox,
+          xmlns: 'http://www.w3.org/2000/svg'
+        }
+      }, [
+        h('path', {
+          attrs: {
+            d: 'M17 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V7l-4-4zm-5 16c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm3-10H5V5h10v4z'
+          }
+        })
+      ]);
+    }
+  };
+</script>
+

@@ -1,0 +1,35 @@
+{
+  "name": "md-svg-vue",
+  "version": "1.0.10",
+  "description": "Server Side Material Design Icons (SVG) for Vue.js",
+  "main": "index.js",
+  "repository": "git@github.com:IPRIT/md-svg-vue.git",
+  "homepage": "github.com/IPRIT/md-svg-vue",
+  "keywords": [
+    "mdi",
+    "vue",
+    "vuejs",
+    "vue.js",
+    "material",
+    "design",
+    "icons",
+    "icon",
+    "server",
+    "server side",
+    "ssr"
+  ],
+  "bugs": {
+    "url": "https://github.com/IPRIT/md-svg-vue/issues"
+  },
+  "author": "Alexander Belov <ipritoflex@yandex.ru>",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "prebuild": "npm run clean && mkdir dist",
+    "build": "node build.js && cp *LICENSE dist && cp *.md dist",
+    "release": "node ./node_modules/.bin/standard-version"
+  },
+  "peerDependencies": {
+    "vue": "^2.5.13"
+  }
+}
