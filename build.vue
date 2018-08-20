@@ -3,10 +3,10 @@
     name: 'md-{{icon}}',
 
     functional: true,
-    
+
     serverCacheKey: _ => 'md-{{icon}}',
 
-    render (createElement, { props = {} }) {
+    render (h, { props = {} }) {
       const {
         className,
         width = 24,
@@ -14,7 +14,7 @@
         viewBox = '0 0 24 24'
       } = props;
 
-      return createElement('svg', {
+      return h('svg', {
         staticClass: 'icon md-icon',
         'class': className,
         attrs: {
@@ -23,11 +23,13 @@
           viewBox: viewBox,
           xmlns: 'http://www.w3.org/2000/svg'
         }
-      }, createElement('path', {
-        attrs: {
-          d: '{{path}}'
-        }
-      }));
+      }, [
+        h('path', {
+          attrs: {
+            d: '{{path}}'
+          }
+        })
+      ]);
     }
   };
 </script>
