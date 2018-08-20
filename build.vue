@@ -3,7 +3,7 @@
     name: 'md-{{icon}}',
 
     functional: true,
-
+    
     serverCacheKey: _ => 'md-{{icon}}',
 
     render (createElement, { props = {} }) {
