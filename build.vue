@@ -1,32 +1,29 @@
 <script>
   export default {
     name: 'md-{{icon}}',
-    props: {
-      className: [Object, Array, String],
-      width: {
-        type: Number,
-        'default': 24
-      },
-      height: {
-        type: Number,
-        'default': 24
-      },
-      viewBox: {
-        type: String,
-        'default': '0 0 24 24',
-      }
-    },
-    render (h) {
-      return h('svg', {
+
+    functional: true,
+
+    serverCacheKey: _ => 'md-{{icon}}',
+
+    render (createElement, { props = {} }) {
+      const {
+        className,
+        width = 24,
+        height = 24,
+        viewBox = '0 0 24 24'
+      } = props;
+
+      return createElement('svg', {
         staticClass: 'icon md-icon',
-        'class': this.className,
+        'class': className,
         attrs: {
-          width: this.width,
-          height: this.height,
-          viewBox: this.viewBox,
+          width: width,
+          height: height,
+          viewBox: viewBox,
           xmlns: 'http://www.w3.org/2000/svg'
         }
-      }, h('path', {
+      }, createElement('path', {
         attrs: {
           d: '{{path}}'
         }
