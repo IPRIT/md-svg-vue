@@ -4,7 +4,7 @@
 
     functional: true,
 
-    // serverCacheKey: _ => 'md-local-movies',
+    serverCacheKey: props => `md-local-movies:${props.width}:${props.height}:${props.className || 'icon'}`,
 
     render (h, { props = {} }) {
       const {

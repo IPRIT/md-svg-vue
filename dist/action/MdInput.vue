@@ -4,7 +4,7 @@
 
     functional: true,
 
-    // serverCacheKey: _ => 'md-input',
+    serverCacheKey: props => `md-input:${props.width}:${props.height}:${props.className || 'icon'}`,
 
     render (h, { props = {} }) {
       const {

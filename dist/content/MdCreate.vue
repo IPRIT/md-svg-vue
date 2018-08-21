@@ -4,7 +4,7 @@
 
     functional: true,
 
-    // serverCacheKey: _ => 'md-create',
+    serverCacheKey: props => `md-create:${props.width}:${props.height}:${props.className || 'icon'}`,
 
     render (h, { props = {} }) {
       const {

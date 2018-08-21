@@ -4,7 +4,7 @@
 
     functional: true,
 
-    // serverCacheKey: _ => 'md-radio',
+    serverCacheKey: props => `md-radio:${props.width}:${props.height}:${props.className || 'icon'}`,
 
     render (h, { props = {} }) {
       const {

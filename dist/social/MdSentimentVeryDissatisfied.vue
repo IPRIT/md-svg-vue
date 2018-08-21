@@ -4,7 +4,7 @@
 
     functional: true,
 
-    // serverCacheKey: _ => 'md-sentiment-very-dissatisfied',
+    serverCacheKey: props => `md-sentiment-very-dissatisfied:${props.width}:${props.height}:${props.className || 'icon'}`,
 
     render (h, { props = {} }) {
       const {

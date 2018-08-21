@@ -4,7 +4,7 @@
 
     functional: true,
 
-    // serverCacheKey: _ => 'md-format-textdirection-r-to-l',
+    serverCacheKey: props => `md-format-textdirection-r-to-l:${props.width}:${props.height}:${props.className || 'icon'}`,
 
     render (h, { props = {} }) {
       const {

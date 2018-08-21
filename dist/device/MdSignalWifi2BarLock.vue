@@ -4,7 +4,7 @@
 
     functional: true,
 
-    // serverCacheKey: _ => 'md-signal-wifi-2-bar-lock',
+    serverCacheKey: props => `md-signal-wifi-2-bar-lock:${props.width}:${props.height}:${props.className || 'icon'}`,
 
     render (h, { props = {} }) {
       const {

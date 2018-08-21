@@ -4,7 +4,7 @@
 
     functional: true,
 
-    // serverCacheKey: _ => 'md-signal-wifi-statusbar-null-26-x',
+    serverCacheKey: props => `md-signal-wifi-statusbar-null-26-x:${props.width}:${props.height}:${props.className || 'icon'}`,
 
     render (h, { props = {} }) {
       const {

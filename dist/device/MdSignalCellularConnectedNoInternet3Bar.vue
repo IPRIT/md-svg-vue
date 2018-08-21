@@ -4,7 +4,7 @@
 
     functional: true,
 
-    // serverCacheKey: _ => 'md-signal-cellular-connected-no-internet-3-bar',
+    serverCacheKey: props => `md-signal-cellular-connected-no-internet-3-bar:${props.width}:${props.height}:${props.className || 'icon'}`,
 
     render (h, { props = {} }) {
       const {

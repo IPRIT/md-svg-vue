@@ -4,7 +4,7 @@
 
     functional: true,
 
-    // serverCacheKey: _ => 'md-airline-seat-legroom-reduced',
+    serverCacheKey: props => `md-airline-seat-legroom-reduced:${props.width}:${props.height}:${props.className || 'icon'}`,
 
     render (h, { props = {} }) {
       const {
