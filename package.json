@@ -1,6 +1,6 @@
 {
   "name": "md-svg-vue",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "Server Side Material Design Icons (SVG) for Vue.js",
   "main": "index.js",
   "repository": "git@github.com:IPRIT/md-svg-vue.git",
