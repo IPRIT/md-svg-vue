@@ -2,30 +2,39 @@
   export default {
     name: 'md-fiber-smart-record',
 
-    functional: true,
+    serverCacheKey: props => {
+      return `md-fiber-smart-record:${props.width}:${props.height}:${props.className || 'icon'}`;
+    },
 
-    // serverCacheKey: props => `md-fiber-smart-record:${props.width}:${props.height}:${props.className || 'icon'}`,
+    props: {
+      className: [Object, Array, String],
+      width: {
+        type: Number,
+        'default': 24
+      },
+      height: {
+        type: Number,
+        'default': 24
+      },
+      viewBox: {
+        type: String,
+        'default': '0 0 24 24',
+      }
+    },
 
-    render (h, renderContext) {
-      const { props = {}, data = {} } = renderContext;
-      const { staticClass = '' } = data;
-      const {
-        className,
-        width = 24,
-        height = 24,
-        viewBox = '0 0 24 24'
-      } = props;
-
-      return h('svg', {
-        staticClass: `icon md-icon md-fiber-smart-record${staticClass ? ' ' + staticClass : ''}`,
-        'class': className,
+    render (h) {
+      const data = {
+        staticClass: 'icon md-icon md-fiber-smart-record',
+        'class': this.className,
         attrs: {
-          width: width,
-          height: height,
-          viewBox: viewBox,
+          width: this.width,
+          height: this.height,
+          viewBox: this.viewBox,
           xmlns: 'http://www.w3.org/2000/svg'
         }
-      }, [
+      };
+
+      return h('svg', data, [
         h('path', {
           attrs: {
             d: 'M17 4.26v2.09c2.33.82 4 3.04 4 5.65s-1.67 4.83-4 5.65v2.09c3.45-.89 6-4.01 6-7.74s-2.55-6.85-6-7.74z'

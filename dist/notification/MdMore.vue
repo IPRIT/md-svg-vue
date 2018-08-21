@@ -2,30 +2,39 @@
   export default {
     name: 'md-more',
 
-    functional: true,
+    serverCacheKey: props => {
+      return `md-more:${props.width}:${props.height}:${props.className || 'icon'}`;
+    },
 
-    // serverCacheKey: props => `md-more:${props.width}:${props.height}:${props.className || 'icon'}`,
+    props: {
+      className: [Object, Array, String],
+      width: {
+        type: Number,
+        'default': 24
+      },
+      height: {
+        type: Number,
+        'default': 24
+      },
+      viewBox: {
+        type: String,
+        'default': '0 0 24 24',
+      }
+    },
 
-    render (h, renderContext) {
-      const { props = {}, data = {} } = renderContext;
-      const { staticClass = '' } = data;
-      const {
-        className,
-        width = 24,
-        height = 24,
-        viewBox = '0 0 24 24'
-      } = props;
-
-      return h('svg', {
-        staticClass: `icon md-icon md-more${staticClass ? ' ' + staticClass : ''}`,
-        'class': className,
+    render (h) {
+      const data = {
+        staticClass: 'icon md-icon md-more',
+        'class': this.className,
         attrs: {
-          width: width,
-          height: height,
-          viewBox: viewBox,
+          width: this.width,
+          height: this.height,
+          viewBox: this.viewBox,
           xmlns: 'http://www.w3.org/2000/svg'
         }
-      }, [
+      };
+
+      return h('svg', data, [
         h('path', {
           attrs: {
             d: 'M22 3H7c-.69 0-1.23.35-1.59.88L0 12l5.41 8.11c.36.53.97.89 1.66.89H22c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 13.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm5 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm5 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z'

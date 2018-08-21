@@ -2,30 +2,39 @@
   export default {
     name: 'md-format-shapes',
 
-    functional: true,
+    serverCacheKey: props => {
+      return `md-format-shapes:${props.width}:${props.height}:${props.className || 'icon'}`;
+    },
 
-    // serverCacheKey: props => `md-format-shapes:${props.width}:${props.height}:${props.className || 'icon'}`,
+    props: {
+      className: [Object, Array, String],
+      width: {
+        type: Number,
+        'default': 24
+      },
+      height: {
+        type: Number,
+        'default': 24
+      },
+      viewBox: {
+        type: String,
+        'default': '0 0 24 24',
+      }
+    },
 
-    render (h, renderContext) {
-      const { props = {}, data = {} } = renderContext;
-      const { staticClass = '' } = data;
-      const {
-        className,
-        width = 24,
-        height = 24,
-        viewBox = '0 0 24 24'
-      } = props;
-
-      return h('svg', {
-        staticClass: `icon md-icon md-format-shapes${staticClass ? ' ' + staticClass : ''}`,
-        'class': className,
+    render (h) {
+      const data = {
+        staticClass: 'icon md-icon md-format-shapes',
+        'class': this.className,
         attrs: {
-          width: width,
-          height: height,
-          viewBox: viewBox,
+          width: this.width,
+          height: this.height,
+          viewBox: this.viewBox,
           xmlns: 'http://www.w3.org/2000/svg'
         }
-      }, [
+      };
+
+      return h('svg', data, [
         h('path', {
           attrs: {
             d: 'M23 7V1h-6v2H7V1H1v6h2v10H1v6h6v-2h10v2h6v-6h-2V7h2zM3 3h2v2H3V3zm2 18H3v-2h2v2zm12-2H7v-2H5V7h2V5h10v2h2v10h-2v2zm4 2h-2v-2h2v2zM19 5V3h2v2h-2zm-5.27 9h-3.49l-.73 2H7.89l3.4-9h1.4l3.41 9h-1.63l-.74-2zm-3.04-1.26h2.61L12 8.91l-1.31 3.83z'

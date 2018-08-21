@@ -2,30 +2,39 @@
   export default {
     name: 'md-opacity',
 
-    functional: true,
+    serverCacheKey: props => {
+      return `md-opacity:${props.width}:${props.height}:${props.className || 'icon'}`;
+    },
 
-    // serverCacheKey: props => `md-opacity:${props.width}:${props.height}:${props.className || 'icon'}`,
+    props: {
+      className: [Object, Array, String],
+      width: {
+        type: Number,
+        'default': 24
+      },
+      height: {
+        type: Number,
+        'default': 24
+      },
+      viewBox: {
+        type: String,
+        'default': '0 0 24 24',
+      }
+    },
 
-    render (h, renderContext) {
-      const { props = {}, data = {} } = renderContext;
-      const { staticClass = '' } = data;
-      const {
-        className,
-        width = 24,
-        height = 24,
-        viewBox = '0 0 24 24'
-      } = props;
-
-      return h('svg', {
-        staticClass: `icon md-icon md-opacity${staticClass ? ' ' + staticClass : ''}`,
-        'class': className,
+    render (h) {
+      const data = {
+        staticClass: 'icon md-icon md-opacity',
+        'class': this.className,
         attrs: {
-          width: width,
-          height: height,
-          viewBox: viewBox,
+          width: this.width,
+          height: this.height,
+          viewBox: this.viewBox,
           xmlns: 'http://www.w3.org/2000/svg'
         }
-      }, [
+      };
+
+      return h('svg', data, [
         h('path', {
           attrs: {
             d: 'M17.66 8L12 2.35 6.34 8C4.78 9.56 4 11.64 4 13.64s.78 4.11 2.34 5.67 3.61 2.35 5.66 2.35 4.1-.79 5.66-2.35S20 15.64 20 13.64 19.22 9.56 17.66 8zM6 14c.01-2 .62-3.27 1.76-4.4L12 5.27l4.24 4.38C17.38 10.77 17.99 12 18 14H6z'

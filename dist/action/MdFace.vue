@@ -2,30 +2,39 @@
   export default {
     name: 'md-face',
 
-    functional: true,
+    serverCacheKey: props => {
+      return `md-face:${props.width}:${props.height}:${props.className || 'icon'}`;
+    },
 
-    // serverCacheKey: props => `md-face:${props.width}:${props.height}:${props.className || 'icon'}`,
+    props: {
+      className: [Object, Array, String],
+      width: {
+        type: Number,
+        'default': 24
+      },
+      height: {
+        type: Number,
+        'default': 24
+      },
+      viewBox: {
+        type: String,
+        'default': '0 0 24 24',
+      }
+    },
 
-    render (h, renderContext) {
-      const { props = {}, data = {} } = renderContext;
-      const { staticClass = '' } = data;
-      const {
-        className,
-        width = 24,
-        height = 24,
-        viewBox = '0 0 24 24'
-      } = props;
-
-      return h('svg', {
-        staticClass: `icon md-icon md-face${staticClass ? ' ' + staticClass : ''}`,
-        'class': className,
+    render (h) {
+      const data = {
+        staticClass: 'icon md-icon md-face',
+        'class': this.className,
         attrs: {
-          width: width,
-          height: height,
-          viewBox: viewBox,
+          width: this.width,
+          height: this.height,
+          viewBox: this.viewBox,
           xmlns: 'http://www.w3.org/2000/svg'
         }
-      }, [
+      };
+
+      return h('svg', data, [
         h('path', {
           attrs: {
             d: 'M9 11.75c-.69 0-1.25.56-1.25 1.25s.56 1.25 1.25 1.25 1.25-.56 1.25-1.25-.56-1.25-1.25-1.25zm6 0c-.69 0-1.25.56-1.25 1.25s.56 1.25 1.25 1.25 1.25-.56 1.25-1.25-.56-1.25-1.25-1.25zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8 0-.29.02-.58.05-.86 2.36-1.05 4.23-2.98 5.21-5.37C11.07 8.33 14.05 10 17.42 10c.78 0 1.53-.09 2.25-.26.21.71.33 1.47.33 2.26 0 4.41-3.59 8-8 8z'
