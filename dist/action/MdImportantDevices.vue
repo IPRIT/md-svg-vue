@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: props => `md-important-devices:${props.width}:${props.height}:${props.className || 'icon'}`,
+    // serverCacheKey: props => `md-important-devices:${props.width}:${props.height}:${props.className || 'icon'}`,
 
     render (h, { props = {} }) {
       const {

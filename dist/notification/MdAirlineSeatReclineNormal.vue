@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: props => `md-airline-seat-recline-normal:${props.width}:${props.height}:${props.className || 'icon'}`,
+    // serverCacheKey: props => `md-airline-seat-recline-normal:${props.width}:${props.height}:${props.className || 'icon'}`,
 
     render (h, { props = {} }) {
       const {

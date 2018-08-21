@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: props => `md-do-not-disturb-alt:${props.width}:${props.height}:${props.className || 'icon'}`,
+    // serverCacheKey: props => `md-do-not-disturb-alt:${props.width}:${props.height}:${props.className || 'icon'}`,
 
     render (h, { props = {} }) {
       const {

@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: props => `md-fiber-pin:${props.width}:${props.height}:${props.className || 'icon'}`,
+    // serverCacheKey: props => `md-fiber-pin:${props.width}:${props.height}:${props.className || 'icon'}`,
 
     render (h, { props = {} }) {
       const {

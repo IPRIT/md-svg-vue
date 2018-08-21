@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: props => `md-closed-caption:${props.width}:${props.height}:${props.className || 'icon'}`,
+    // serverCacheKey: props => `md-closed-caption:${props.width}:${props.height}:${props.className || 'icon'}`,
 
     render (h, { props = {} }) {
       const {

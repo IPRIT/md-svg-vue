@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: props => `md-all-out:${props.width}:${props.height}:${props.className || 'icon'}`,
+    // serverCacheKey: props => `md-all-out:${props.width}:${props.height}:${props.className || 'icon'}`,
 
     render (h, { props = {} }) {
       const {

@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: props => `md-location-city:${props.width}:${props.height}:${props.className || 'icon'}`,
+    // serverCacheKey: props => `md-location-city:${props.width}:${props.height}:${props.className || 'icon'}`,
 
     render (h, { props = {} }) {
       const {

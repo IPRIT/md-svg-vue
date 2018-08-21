@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: props => `md-loyalty:${props.width}:${props.height}:${props.className || 'icon'}`,
+    // serverCacheKey: props => `md-loyalty:${props.width}:${props.height}:${props.className || 'icon'}`,
 
     render (h, { props = {} }) {
       const {

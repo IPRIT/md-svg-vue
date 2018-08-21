@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: props => `md-panorama-horizontal:${props.width}:${props.height}:${props.className || 'icon'}`,
+    // serverCacheKey: props => `md-panorama-horizontal:${props.width}:${props.height}:${props.className || 'icon'}`,
 
     render (h, { props = {} }) {
       const {

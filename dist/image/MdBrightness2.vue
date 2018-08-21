@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: props => `md-brightness-2:${props.width}:${props.height}:${props.className || 'icon'}`,
+    // serverCacheKey: props => `md-brightness-2:${props.width}:${props.height}:${props.className || 'icon'}`,
 
     render (h, { props = {} }) {
       const {

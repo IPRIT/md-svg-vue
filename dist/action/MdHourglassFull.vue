@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: props => `md-hourglass-full:${props.width}:${props.height}:${props.className || 'icon'}`,
+    // serverCacheKey: props => `md-hourglass-full:${props.width}:${props.height}:${props.className || 'icon'}`,
 
     render (h, { props = {} }) {
       const {

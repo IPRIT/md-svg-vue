@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: props => `md-invert-colors:${props.width}:${props.height}:${props.className || 'icon'}`,
+    // serverCacheKey: props => `md-invert-colors:${props.width}:${props.height}:${props.className || 'icon'}`,
 
     render (h, { props = {} }) {
       const {

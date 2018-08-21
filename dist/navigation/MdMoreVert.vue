@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: props => `md-more-vert:${props.width}:${props.height}:${props.className || 'icon'}`,
+    // serverCacheKey: props => `md-more-vert:${props.width}:${props.height}:${props.className || 'icon'}`,
 
     render (h, { props = {} }) {
       const {

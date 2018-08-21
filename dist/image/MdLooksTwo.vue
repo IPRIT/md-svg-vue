@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: props => `md-looks-two:${props.width}:${props.height}:${props.className || 'icon'}`,
+    // serverCacheKey: props => `md-looks-two:${props.width}:${props.height}:${props.className || 'icon'}`,
 
     render (h, { props = {} }) {
       const {

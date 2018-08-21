@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: props => `md-rotate-90-degrees-ccw:${props.width}:${props.height}:${props.className || 'icon'}`,
+    // serverCacheKey: props => `md-rotate-90-degrees-ccw:${props.width}:${props.height}:${props.className || 'icon'}`,
 
     render (h, { props = {} }) {
       const {
