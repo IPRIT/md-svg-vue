@@ -6,7 +6,9 @@
 
     // serverCacheKey: props => `md-local-play:${props.width}:${props.height}:${props.className || 'icon'}`,
 
-    render (h, { props = {} }) {
+    render (h, renderContext) {
+      const { props = {}, data = {} } = renderContext;
+      const { staticClass = '' } = data;
       const {
         className,
         width = 24,
@@ -15,7 +17,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon md-local-play',
+        staticClass: `icon md-icon md-local-play${staticClass ? ' ' + staticClass : ''}`,
         'class': className,
         attrs: {
           width: width,

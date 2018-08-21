@@ -6,7 +6,9 @@
 
     // serverCacheKey: props => `md-youtube-searched-for:${props.width}:${props.height}:${props.className || 'icon'}`,
 
-    render (h, { props = {} }) {
+    render (h, renderContext) {
+      const { props = {}, data = {} } = renderContext;
+      const { staticClass = '' } = data;
       const {
         className,
         width = 24,
@@ -15,7 +17,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon md-youtube-searched-for',
+        staticClass: `icon md-icon md-youtube-searched-for${staticClass ? ' ' + staticClass : ''}`,
         'class': className,
         attrs: {
           width: width,

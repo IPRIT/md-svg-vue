@@ -6,7 +6,9 @@
 
     // serverCacheKey: props => `md-signal-wifi-statusbar-2-bar-26-x:${props.width}:${props.height}:${props.className || 'icon'}`,
 
-    render (h, { props = {} }) {
+    render (h, renderContext) {
+      const { props = {}, data = {} } = renderContext;
+      const { staticClass = '' } = data;
       const {
         className,
         width = 24,
@@ -15,7 +17,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon md-signal-wifi-statusbar-2-bar-26-x',
+        staticClass: `icon md-icon md-signal-wifi-statusbar-2-bar-26-x${staticClass ? ' ' + staticClass : ''}`,
         'class': className,
         attrs: {
           width: width,
