@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-photo-camera',
+    // serverCacheKey: _ => 'md-photo-camera',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-photo-camera',
         'class': className,
         attrs: {
           width: width,

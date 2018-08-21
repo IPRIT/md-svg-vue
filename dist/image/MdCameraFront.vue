@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-camera-front',
+    // serverCacheKey: _ => 'md-camera-front',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-camera-front',
         'class': className,
         attrs: {
           width: width,

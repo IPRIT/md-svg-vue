@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-perm-contact-calendar',
+    // serverCacheKey: _ => 'md-perm-contact-calendar',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-perm-contact-calendar',
         'class': className,
         attrs: {
           width: width,

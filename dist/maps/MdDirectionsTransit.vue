@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-directions-transit',
+    // serverCacheKey: _ => 'md-directions-transit',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-directions-transit',
         'class': className,
         attrs: {
           width: width,

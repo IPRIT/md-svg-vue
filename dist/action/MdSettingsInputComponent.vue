@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-settings-input-component',
+    // serverCacheKey: _ => 'md-settings-input-component',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-settings-input-component',
         'class': className,
         attrs: {
           width: width,

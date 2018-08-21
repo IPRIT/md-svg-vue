@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-signal-wifi-statusbar-3-bar-26-x',
+    // serverCacheKey: _ => 'md-signal-wifi-statusbar-3-bar-26-x',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-signal-wifi-statusbar-3-bar-26-x',
         'class': className,
         attrs: {
           width: width,

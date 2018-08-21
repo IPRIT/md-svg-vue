@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-add-to-queue',
+    // serverCacheKey: _ => 'md-add-to-queue',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-add-to-queue',
         'class': className,
         attrs: {
           width: width,

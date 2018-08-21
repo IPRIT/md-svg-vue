@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-euro-symbol',
+    // serverCacheKey: _ => 'md-euro-symbol',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-euro-symbol',
         'class': className,
         attrs: {
           width: width,

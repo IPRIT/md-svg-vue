@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-chrome-reader-mode',
+    // serverCacheKey: _ => 'md-chrome-reader-mode',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-chrome-reader-mode',
         'class': className,
         attrs: {
           width: width,

@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-thumbs-up-down',
+    // serverCacheKey: _ => 'md-thumbs-up-down',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-thumbs-up-down',
         'class': className,
         attrs: {
           width: width,

@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-tab-unselected',
+    // serverCacheKey: _ => 'md-tab-unselected',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-tab-unselected',
         'class': className,
         attrs: {
           width: width,

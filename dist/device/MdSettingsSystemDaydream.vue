@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-settings-system-daydream',
+    // serverCacheKey: _ => 'md-settings-system-daydream',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-settings-system-daydream',
         'class': className,
         attrs: {
           width: width,

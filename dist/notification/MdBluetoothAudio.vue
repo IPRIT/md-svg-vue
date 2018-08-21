@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-bluetooth-audio',
+    // serverCacheKey: _ => 'md-bluetooth-audio',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-bluetooth-audio',
         'class': className,
         attrs: {
           width: width,

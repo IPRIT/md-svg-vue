@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-format-textdirection-r-to-l',
+    // serverCacheKey: _ => 'md-format-textdirection-r-to-l',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-format-textdirection-r-to-l',
         'class': className,
         attrs: {
           width: width,

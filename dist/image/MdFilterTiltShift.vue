@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-filter-tilt-shift',
+    // serverCacheKey: _ => 'md-filter-tilt-shift',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-filter-tilt-shift',
         'class': className,
         attrs: {
           width: width,

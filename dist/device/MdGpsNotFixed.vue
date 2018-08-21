@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-gps-not-fixed',
+    // serverCacheKey: _ => 'md-gps-not-fixed',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-gps-not-fixed',
         'class': className,
         attrs: {
           width: width,

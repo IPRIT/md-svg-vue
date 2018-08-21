@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-settings-backup-restore',
+    // serverCacheKey: _ => 'md-settings-backup-restore',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-settings-backup-restore',
         'class': className,
         attrs: {
           width: width,

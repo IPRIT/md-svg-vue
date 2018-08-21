@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-delete-sweep',
+    // serverCacheKey: _ => 'md-delete-sweep',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-delete-sweep',
         'class': className,
         attrs: {
           width: width,

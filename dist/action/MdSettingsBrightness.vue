@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-settings-brightness',
+    // serverCacheKey: _ => 'md-settings-brightness',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-settings-brightness',
         'class': className,
         attrs: {
           width: width,

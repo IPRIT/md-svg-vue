@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-strikethrough-s',
+    // serverCacheKey: _ => 'md-strikethrough-s',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-strikethrough-s',
         'class': className,
         attrs: {
           width: width,

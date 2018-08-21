@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-format-line-spacing',
+    // serverCacheKey: _ => 'md-format-line-spacing',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-format-line-spacing',
         'class': className,
         attrs: {
           width: width,

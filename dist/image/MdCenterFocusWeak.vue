@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-center-focus-weak',
+    // serverCacheKey: _ => 'md-center-focus-weak',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-center-focus-weak',
         'class': className,
         attrs: {
           width: width,

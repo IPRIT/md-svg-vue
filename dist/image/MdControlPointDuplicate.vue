@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-control-point-duplicate',
+    // serverCacheKey: _ => 'md-control-point-duplicate',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-control-point-duplicate',
         'class': className,
         attrs: {
           width: width,

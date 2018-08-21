@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-exit-to-app',
+    // serverCacheKey: _ => 'md-exit-to-app',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-exit-to-app',
         'class': className,
         attrs: {
           width: width,

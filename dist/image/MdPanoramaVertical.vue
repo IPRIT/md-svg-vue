@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-panorama-vertical',
+    // serverCacheKey: _ => 'md-panorama-vertical',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-panorama-vertical',
         'class': className,
         attrs: {
           width: width,

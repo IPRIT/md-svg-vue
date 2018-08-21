@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-compare-arrows',
+    // serverCacheKey: _ => 'md-compare-arrows',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-compare-arrows',
         'class': className,
         attrs: {
           width: width,

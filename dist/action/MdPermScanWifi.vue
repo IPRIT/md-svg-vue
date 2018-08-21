@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-perm-scan-wifi',
+    // serverCacheKey: _ => 'md-perm-scan-wifi',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-perm-scan-wifi',
         'class': className,
         attrs: {
           width: width,

@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-markunread-mailbox',
+    // serverCacheKey: _ => 'md-markunread-mailbox',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-markunread-mailbox',
         'class': className,
         attrs: {
           width: width,

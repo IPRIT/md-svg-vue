@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-radio-button-unchecked',
+    // serverCacheKey: _ => 'md-radio-button-unchecked',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-radio-button-unchecked',
         'class': className,
         attrs: {
           width: width,

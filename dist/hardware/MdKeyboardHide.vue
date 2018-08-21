@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-keyboard-hide',
+    // serverCacheKey: _ => 'md-keyboard-hide',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-keyboard-hide',
         'class': className,
         attrs: {
           width: width,

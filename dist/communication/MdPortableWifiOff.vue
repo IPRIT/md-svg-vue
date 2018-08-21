@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-portable-wifi-off',
+    // serverCacheKey: _ => 'md-portable-wifi-off',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-portable-wifi-off',
         'class': className,
         attrs: {
           width: width,

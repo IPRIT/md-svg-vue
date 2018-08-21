@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-phone-in-talk',
+    // serverCacheKey: _ => 'md-phone-in-talk',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-phone-in-talk',
         'class': className,
         attrs: {
           width: width,

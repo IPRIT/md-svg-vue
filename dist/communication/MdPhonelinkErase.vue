@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-phonelink-erase',
+    // serverCacheKey: _ => 'md-phonelink-erase',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-phonelink-erase',
         'class': className,
         attrs: {
           width: width,

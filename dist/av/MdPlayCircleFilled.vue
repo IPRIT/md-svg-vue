@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-play-circle-filled',
+    // serverCacheKey: _ => 'md-play-circle-filled',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-play-circle-filled',
         'class': className,
         attrs: {
           width: width,

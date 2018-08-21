@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-vertical-align-top',
+    // serverCacheKey: _ => 'md-vertical-align-top',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-vertical-align-top',
         'class': className,
         attrs: {
           width: width,

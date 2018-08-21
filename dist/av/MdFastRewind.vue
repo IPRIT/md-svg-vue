@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-fast-rewind',
+    // serverCacheKey: _ => 'md-fast-rewind',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-fast-rewind',
         'class': className,
         attrs: {
           width: width,

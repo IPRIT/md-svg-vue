@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-laptop-chromebook',
+    // serverCacheKey: _ => 'md-laptop-chromebook',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-laptop-chromebook',
         'class': className,
         attrs: {
           width: width,

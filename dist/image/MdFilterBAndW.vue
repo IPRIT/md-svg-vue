@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-filter-b-and-w',
+    // serverCacheKey: _ => 'md-filter-b-and-w',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-filter-b-and-w',
         'class': className,
         attrs: {
           width: width,

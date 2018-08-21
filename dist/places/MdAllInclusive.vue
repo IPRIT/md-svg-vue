@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-all-inclusive',
+    // serverCacheKey: _ => 'md-all-inclusive',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-all-inclusive',
         'class': className,
         attrs: {
           width: width,

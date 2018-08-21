@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-wifi-tethering',
+    // serverCacheKey: _ => 'md-wifi-tethering',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-wifi-tethering',
         'class': className,
         attrs: {
           width: width,

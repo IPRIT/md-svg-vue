@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-wifi-lock',
+    // serverCacheKey: _ => 'md-wifi-lock',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-wifi-lock',
         'class': className,
         attrs: {
           width: width,

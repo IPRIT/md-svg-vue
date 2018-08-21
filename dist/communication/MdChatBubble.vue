@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-chat-bubble',
+    // serverCacheKey: _ => 'md-chat-bubble',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-chat-bubble',
         'class': className,
         attrs: {
           width: width,

@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-signal-cellular-connected-no-internet-2-bar',
+    // serverCacheKey: _ => 'md-signal-cellular-connected-no-internet-2-bar',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-signal-cellular-connected-no-internet-2-bar',
         'class': className,
         attrs: {
           width: width,

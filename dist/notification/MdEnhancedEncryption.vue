@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-enhanced-encryption',
+    // serverCacheKey: _ => 'md-enhanced-encryption',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-enhanced-encryption',
         'class': className,
         attrs: {
           width: width,

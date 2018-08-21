@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-battery-charging-20',
+    // serverCacheKey: _ => 'md-battery-charging-20',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-battery-charging-20',
         'class': className,
         attrs: {
           width: width,

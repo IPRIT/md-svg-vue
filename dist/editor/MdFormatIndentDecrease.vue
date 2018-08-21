@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-format-indent-decrease',
+    // serverCacheKey: _ => 'md-format-indent-decrease',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-format-indent-decrease',
         'class': className,
         attrs: {
           width: width,

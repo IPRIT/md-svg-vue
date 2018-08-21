@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-slow-motion-video',
+    // serverCacheKey: _ => 'md-slow-motion-video',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-slow-motion-video',
         'class': className,
         attrs: {
           width: width,

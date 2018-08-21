@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-create-new-folder',
+    // serverCacheKey: _ => 'md-create-new-folder',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-create-new-folder',
         'class': className,
         attrs: {
           width: width,

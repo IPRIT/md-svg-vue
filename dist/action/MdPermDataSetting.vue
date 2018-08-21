@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-perm-data-setting',
+    // serverCacheKey: _ => 'md-perm-data-setting',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-perm-data-setting',
         'class': className,
         attrs: {
           width: width,

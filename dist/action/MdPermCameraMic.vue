@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-perm-camera-mic',
+    // serverCacheKey: _ => 'md-perm-camera-mic',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-perm-camera-mic',
         'class': className,
         attrs: {
           width: width,

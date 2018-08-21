@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-featured-play-list',
+    // serverCacheKey: _ => 'md-featured-play-list',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-featured-play-list',
         'class': className,
         attrs: {
           width: width,

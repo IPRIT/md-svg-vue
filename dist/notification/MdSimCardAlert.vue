@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-sim-card-alert',
+    // serverCacheKey: _ => 'md-sim-card-alert',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-sim-card-alert',
         'class': className,
         attrs: {
           width: width,

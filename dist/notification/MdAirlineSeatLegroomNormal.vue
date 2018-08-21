@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-airline-seat-legroom-normal',
+    // serverCacheKey: _ => 'md-airline-seat-legroom-normal',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-airline-seat-legroom-normal',
         'class': className,
         attrs: {
           width: width,

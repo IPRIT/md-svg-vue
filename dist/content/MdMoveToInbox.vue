@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-move-to-inbox',
+    // serverCacheKey: _ => 'md-move-to-inbox',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-move-to-inbox',
         'class': className,
         attrs: {
           width: width,

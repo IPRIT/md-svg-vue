@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-panorama-fish-eye',
+    // serverCacheKey: _ => 'md-panorama-fish-eye',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-panorama-fish-eye',
         'class': className,
         attrs: {
           width: width,

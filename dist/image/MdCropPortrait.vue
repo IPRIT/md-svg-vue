@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-crop-portrait',
+    // serverCacheKey: _ => 'md-crop-portrait',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-crop-portrait',
         'class': className,
         attrs: {
           width: width,

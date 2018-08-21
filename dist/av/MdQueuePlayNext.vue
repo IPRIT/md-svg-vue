@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-queue-play-next',
+    // serverCacheKey: _ => 'md-queue-play-next',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-queue-play-next',
         'class': className,
         attrs: {
           width: width,

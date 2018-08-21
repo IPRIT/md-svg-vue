@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-call-missed-outgoing',
+    // serverCacheKey: _ => 'md-call-missed-outgoing',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-call-missed-outgoing',
         'class': className,
         attrs: {
           width: width,

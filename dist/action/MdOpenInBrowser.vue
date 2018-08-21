@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-open-in-browser',
+    // serverCacheKey: _ => 'md-open-in-browser',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-open-in-browser',
         'class': className,
         attrs: {
           width: width,

@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-stay-primary-landscape',
+    // serverCacheKey: _ => 'md-stay-primary-landscape',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-stay-primary-landscape',
         'class': className,
         attrs: {
           width: width,

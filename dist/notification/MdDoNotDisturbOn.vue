@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-do-not-disturb-on',
+    // serverCacheKey: _ => 'md-do-not-disturb-on',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-do-not-disturb-on',
         'class': className,
         attrs: {
           width: width,

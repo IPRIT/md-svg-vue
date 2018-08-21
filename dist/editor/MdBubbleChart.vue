@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-bubble-chart',
+    // serverCacheKey: _ => 'md-bubble-chart',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-bubble-chart',
         'class': className,
         attrs: {
           width: width,

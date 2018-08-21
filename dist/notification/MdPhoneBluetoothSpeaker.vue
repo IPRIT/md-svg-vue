@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-phone-bluetooth-speaker',
+    // serverCacheKey: _ => 'md-phone-bluetooth-speaker',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-phone-bluetooth-speaker',
         'class': className,
         attrs: {
           width: width,

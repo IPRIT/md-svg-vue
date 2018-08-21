@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-border-horizontal',
+    // serverCacheKey: _ => 'md-border-horizontal',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-border-horizontal',
         'class': className,
         attrs: {
           width: width,

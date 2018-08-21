@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-exposure-plus-1',
+    // serverCacheKey: _ => 'md-exposure-plus-1',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-exposure-plus-1',
         'class': className,
         attrs: {
           width: width,

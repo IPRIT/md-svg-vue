@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-wb-cloudy',
+    // serverCacheKey: _ => 'md-wb-cloudy',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-wb-cloudy',
         'class': className,
         attrs: {
           width: width,

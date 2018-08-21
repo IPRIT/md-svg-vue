@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-keyboard-arrow-right',
+    // serverCacheKey: _ => 'md-keyboard-arrow-right',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-keyboard-arrow-right',
         'class': className,
         attrs: {
           width: width,

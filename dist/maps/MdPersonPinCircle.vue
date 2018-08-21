@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-person-pin-circle',
+    // serverCacheKey: _ => 'md-person-pin-circle',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-person-pin-circle',
         'class': className,
         attrs: {
           width: width,

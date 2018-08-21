@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-assignment-returned',
+    // serverCacheKey: _ => 'md-assignment-returned',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-assignment-returned',
         'class': className,
         attrs: {
           width: width,

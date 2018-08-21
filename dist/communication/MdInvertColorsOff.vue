@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-invert-colors-off',
+    // serverCacheKey: _ => 'md-invert-colors-off',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-invert-colors-off',
         'class': className,
         attrs: {
           width: width,

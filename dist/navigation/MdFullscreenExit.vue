@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-fullscreen-exit',
+    // serverCacheKey: _ => 'md-fullscreen-exit',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-fullscreen-exit',
         'class': className,
         attrs: {
           width: width,

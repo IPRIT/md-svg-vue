@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-remove-shopping-cart',
+    // serverCacheKey: _ => 'md-remove-shopping-cart',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-remove-shopping-cart',
         'class': className,
         attrs: {
           width: width,

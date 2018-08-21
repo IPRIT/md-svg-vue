@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-airplanemode-active',
+    // serverCacheKey: _ => 'md-airplanemode-active',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-airplanemode-active',
         'class': className,
         attrs: {
           width: width,

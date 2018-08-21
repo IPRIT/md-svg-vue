@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-phonelink-ring',
+    // serverCacheKey: _ => 'md-phonelink-ring',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-phonelink-ring',
         'class': className,
         attrs: {
           width: width,

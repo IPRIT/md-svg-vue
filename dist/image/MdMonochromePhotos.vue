@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-monochrome-photos',
+    // serverCacheKey: _ => 'md-monochrome-photos',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-monochrome-photos',
         'class': className,
         attrs: {
           width: width,

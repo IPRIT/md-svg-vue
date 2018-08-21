@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-pause-circle-outline',
+    // serverCacheKey: _ => 'md-pause-circle-outline',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-pause-circle-outline',
         'class': className,
         attrs: {
           width: width,

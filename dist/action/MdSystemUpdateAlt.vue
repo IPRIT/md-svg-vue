@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-system-update-alt',
+    // serverCacheKey: _ => 'md-system-update-alt',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-system-update-alt',
         'class': className,
         attrs: {
           width: width,

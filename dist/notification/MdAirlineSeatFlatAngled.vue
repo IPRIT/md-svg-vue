@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-airline-seat-flat-angled',
+    // serverCacheKey: _ => 'md-airline-seat-flat-angled',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-airline-seat-flat-angled',
         'class': className,
         attrs: {
           width: width,

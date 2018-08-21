@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-aspect-ratio',
+    // serverCacheKey: _ => 'md-aspect-ratio',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-aspect-ratio',
         'class': className,
         attrs: {
           width: width,

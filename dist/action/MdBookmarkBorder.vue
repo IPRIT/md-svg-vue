@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-bookmark-border',
+    // serverCacheKey: _ => 'md-bookmark-border',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-bookmark-border',
         'class': className,
         attrs: {
           width: width,

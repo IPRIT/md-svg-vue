@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-remove-red-eye',
+    // serverCacheKey: _ => 'md-remove-red-eye',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-remove-red-eye',
         'class': className,
         attrs: {
           width: width,

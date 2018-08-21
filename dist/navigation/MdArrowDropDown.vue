@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-arrow-drop-down',
+    // serverCacheKey: _ => 'md-arrow-drop-down',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-arrow-drop-down',
         'class': className,
         attrs: {
           width: width,

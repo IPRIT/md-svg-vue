@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-settings-input-hdmi',
+    // serverCacheKey: _ => 'md-settings-input-hdmi',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-settings-input-hdmi',
         'class': className,
         attrs: {
           width: width,

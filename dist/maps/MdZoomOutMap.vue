@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-zoom-out-map',
+    // serverCacheKey: _ => 'md-zoom-out-map',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-zoom-out-map',
         'class': className,
         attrs: {
           width: width,

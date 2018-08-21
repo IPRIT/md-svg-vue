@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-account-balance-wallet',
+    // serverCacheKey: _ => 'md-account-balance-wallet',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-account-balance-wallet',
         'class': className,
         attrs: {
           width: width,

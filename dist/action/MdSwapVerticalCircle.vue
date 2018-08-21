@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-swap-vertical-circle',
+    // serverCacheKey: _ => 'md-swap-vertical-circle',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-swap-vertical-circle',
         'class': className,
         attrs: {
           width: width,

@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-pie-chart-outlined',
+    // serverCacheKey: _ => 'md-pie-chart-outlined',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-pie-chart-outlined',
         'class': className,
         attrs: {
           width: width,

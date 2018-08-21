@@ -4,7 +4,7 @@
 
     functional: true,
 
-    serverCacheKey: _ => 'md-card-giftcard',
+    // serverCacheKey: _ => 'md-card-giftcard',
 
     render (h, { props = {} }) {
       const {
@@ -15,7 +15,7 @@
       } = props;
 
       return h('svg', {
-        staticClass: 'icon md-icon',
+        staticClass: 'icon md-icon md-card-giftcard',
         'class': className,
         attrs: {
           width: width,
