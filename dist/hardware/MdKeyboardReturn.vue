@@ -3,7 +3,7 @@
     name: 'md-keyboard-return',
 
     serverCacheKey: props => {
-      return `md-keyboard-return:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-keyboard-return:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.41L5.83 13H21V7z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

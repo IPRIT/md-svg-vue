@@ -3,7 +3,7 @@
     name: 'md-format-color-text',
 
     serverCacheKey: props => {
-      return `md-format-color-text:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-format-color-text:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M0 20h24v4H0z"/><path d="M11 3L5.5 17h2.25l1.12-3h6.25l1.12 3h2.25L13 3h-2zm-1.38 9L12 5.67 14.38 12H9.62z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

@@ -3,7 +3,7 @@
     name: 'md-equalizer',
 
     serverCacheKey: props => {
-      return `md-equalizer:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-equalizer:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M10 20h4V4h-4v16zm-6 0h4v-8H4v8zM16 9v11h4V9h-4z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

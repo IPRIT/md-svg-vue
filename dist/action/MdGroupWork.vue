@@ -3,7 +3,7 @@
     name: 'md-group-work',
 
     serverCacheKey: props => {
-      return `md-group-work:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-group-work:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM8 17.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5zM9.5 8c0-1.38 1.12-2.5 2.5-2.5s2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5S9.5 9.38 9.5 8zm6.5 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

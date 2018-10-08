@@ -3,7 +3,7 @@
     name: 'md-change-history',
 
     serverCacheKey: props => {
-      return `md-change-history:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-change-history:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M12 7.77L18.39 18H5.61L12 7.77M12 4L2 20h20L12 4z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

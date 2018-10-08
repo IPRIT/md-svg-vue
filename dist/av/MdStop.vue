@@ -3,7 +3,7 @@
     name: 'md-stop',
 
     serverCacheKey: props => {
-      return `md-stop:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-stop:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M6 6h12v12H6z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

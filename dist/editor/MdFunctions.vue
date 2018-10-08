@@ -3,7 +3,7 @@
     name: 'md-functions',
 
     serverCacheKey: props => {
-      return `md-functions:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-functions:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M18 4H6v2l6.5 6L6 18v2h12v-3h-7l5-5-5-5h7z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

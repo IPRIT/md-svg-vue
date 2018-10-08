@@ -3,7 +3,7 @@
     name: 'md-space-bar',
 
     serverCacheKey: props => {
-      return `md-space-bar:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-space-bar:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M18 9v4H6V9H4v6h16V9z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

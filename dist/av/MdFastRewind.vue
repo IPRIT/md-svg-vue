@@ -3,7 +3,7 @@
     name: 'md-fast-rewind',
 
     serverCacheKey: props => {
-      return `md-fast-rewind:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-fast-rewind:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M11 18V6l-8.5 6 8.5 6zm.5-6l8.5 6V6l-8.5 6z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

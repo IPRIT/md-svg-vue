@@ -3,7 +3,7 @@
     name: 'md-laptop-chromebook',
 
     serverCacheKey: props => {
-      return `md-laptop-chromebook:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-laptop-chromebook:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M22 18V3H2v15H0v2h24v-2h-2zm-8 0h-4v-1h4v1zm6-3H4V5h16v10z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

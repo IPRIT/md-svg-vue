@@ -3,7 +3,7 @@
     name: 'md-sd-card',
 
     serverCacheKey: props => {
-      return `md-sd-card:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-sd-card:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M18 2h-8L4.02 8 4 20c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-6 6h-2V4h2v4zm3 0h-2V4h2v4zm3 0h-2V4h2v4z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

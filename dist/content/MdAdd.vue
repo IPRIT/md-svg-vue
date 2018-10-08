@@ -3,7 +3,7 @@
     name: 'md-add',
 
     serverCacheKey: props => {
-      return `md-add:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-add:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

@@ -3,7 +3,7 @@
     name: 'md-power',
 
     serverCacheKey: props => {
-      return `md-power:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-power:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M16.01 7L16 3h-2v4h-4V3H8v4h-.01C7 6.99 6 7.99 6 8.99v5.49L9.5 18v3h5v-3l3.5-3.51v-5.5c0-1-1-2-1.99-1.99z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

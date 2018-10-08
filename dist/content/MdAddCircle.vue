@@ -3,7 +3,7 @@
     name: 'md-add-circle',
 
     serverCacheKey: props => {
-      return `md-add-circle:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-add-circle:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

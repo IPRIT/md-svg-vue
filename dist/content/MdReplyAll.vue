@@ -3,7 +3,7 @@
     name: 'md-reply-all',
 
     serverCacheKey: props => {
-      return `md-reply-all:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-reply-all:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M7 8V5l-7 7 7 7v-3l-4-4 4-4zm6 1V5l-7 7 7 7v-4.1c5 0 8.5 1.6 11 5.1-1-5-4-10-11-11z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

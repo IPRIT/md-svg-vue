@@ -3,7 +3,7 @@
     name: 'md-file-upload',
 
     serverCacheKey: props => {
-      return `md-file-upload:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-file-upload:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M9 16h6v-6h4l-7-7-7 7h4zm-4 2h14v2H5z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

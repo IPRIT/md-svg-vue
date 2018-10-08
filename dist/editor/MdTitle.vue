@@ -3,7 +3,7 @@
     name: 'md-title',
 
     serverCacheKey: props => {
-      return `md-title:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-title:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M5 4v3h5.5v12h3V7H19V4z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

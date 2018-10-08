@@ -3,7 +3,7 @@
     name: 'md-trending-down',
 
     serverCacheKey: props => {
-      return `md-trending-down:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-trending-down:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M16 18l2.29-2.29-4.88-4.88-4 4L2 7.41 3.41 6l6 6 4-4 6.3 6.29L22 12v6z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

@@ -3,7 +3,7 @@
     name: 'md-plus-one',
 
     serverCacheKey: props => {
-      return `md-plus-one:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-plus-one:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M10 8H8v4H4v2h4v4h2v-4h4v-2h-4zm4.5-1.92V7.9l2.5-.5V18h2V5z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

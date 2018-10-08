@@ -3,7 +3,7 @@
     name: 'md-subdirectory-arrow-right',
 
     serverCacheKey: props => {
-      return `md-subdirectory-arrow-right:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-subdirectory-arrow-right:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M19 15l-6 6-1.42-1.42L15.17 16H4V4h2v10h9.17l-3.59-3.58L13 9l6 6z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

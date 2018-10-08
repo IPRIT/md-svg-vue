@@ -3,7 +3,7 @@
     name: 'md-flash-on',
 
     serverCacheKey: props => {
-      return `md-flash-on:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-flash-on:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M7 2v11h3v9l7-12h-4l4-8z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

@@ -3,7 +3,7 @@
     name: 'md-replay',
 
     serverCacheKey: props => {
-      return `md-replay:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-replay:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

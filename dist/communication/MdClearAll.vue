@@ -3,7 +3,7 @@
     name: 'md-clear-all',
 
     serverCacheKey: props => {
-      return `md-clear-all:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-clear-all:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M5 13h14v-2H5v2zm-2 4h14v-2H3v2zM7 7v2h14V7H7z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

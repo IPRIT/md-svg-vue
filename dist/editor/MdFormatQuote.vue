@@ -3,7 +3,7 @@
     name: 'md-format-quote',
 
     serverCacheKey: props => {
-      return `md-format-quote:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-format-quote:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

@@ -3,7 +3,7 @@
     name: 'md-signal-cellular-null',
 
     serverCacheKey: props => {
-      return `md-signal-cellular-null:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-signal-cellular-null:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M20 6.83V20H6.83L20 6.83M22 2L2 22h20V2z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

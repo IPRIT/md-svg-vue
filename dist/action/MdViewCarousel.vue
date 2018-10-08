@@ -3,7 +3,7 @@
     name: 'md-view-carousel',
 
     serverCacheKey: props => {
-      return `md-view-carousel:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-view-carousel:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M7 19h10V4H7v15zm-5-2h4V6H2v11zM18 6v11h4V6h-4z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

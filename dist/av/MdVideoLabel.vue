@@ -3,7 +3,7 @@
     name: 'md-video-label',
 
     serverCacheKey: props => {
-      return `md-video-label:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-video-label:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M21 3H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 13H3V5h18v11z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

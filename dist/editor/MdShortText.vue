@@ -3,7 +3,7 @@
     name: 'md-short-text',
 
     serverCacheKey: props => {
-      return `md-short-text:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-short-text:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M4 9h16v2H4zm0 4h10v2H4z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

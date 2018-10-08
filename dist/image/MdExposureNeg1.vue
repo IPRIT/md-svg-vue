@@ -3,7 +3,7 @@
     name: 'md-exposure-neg-1',
 
     serverCacheKey: props => {
-      return `md-exposure-neg-1:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-exposure-neg-1:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M4 11v2h8v-2H4zm15 7h-2V7.38L14 8.4V6.7L18.7 5h.3v13z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

@@ -3,7 +3,7 @@
     name: 'md-arrow-forward',
 
     serverCacheKey: props => {
-      return `md-arrow-forward:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-arrow-forward:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

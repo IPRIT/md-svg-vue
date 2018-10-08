@@ -3,7 +3,7 @@
     name: 'md-power-input',
 
     serverCacheKey: props => {
-      return `md-power-input:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-power-input:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M2 9v2h19V9H2zm0 6h5v-2H2v2zm7 0h5v-2H9v2zm7 0h5v-2h-5v2z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

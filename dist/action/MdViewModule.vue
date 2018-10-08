@@ -3,7 +3,7 @@
     name: 'md-view-module',
 
     serverCacheKey: props => {
-      return `md-view-module:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-view-module:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M4 11h5V5H4v6zm0 7h5v-6H4v6zm6 0h5v-6h-5v6zm6 0h5v-6h-5v6zm-6-7h5V5h-5v6zm6-6v6h5V5h-5z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

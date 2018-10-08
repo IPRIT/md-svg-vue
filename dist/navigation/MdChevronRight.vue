@@ -3,7 +3,7 @@
     name: 'md-chevron-right',
 
     serverCacheKey: props => {
-      return `md-chevron-right:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-chevron-right:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

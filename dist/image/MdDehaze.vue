@@ -3,7 +3,7 @@
     name: 'md-dehaze',
 
     serverCacheKey: props => {
-      return `md-dehaze:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-dehaze:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M2 15.5v2h20v-2H2zm0-5v2h20v-2H2zm0-5v2h20v-2H2z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

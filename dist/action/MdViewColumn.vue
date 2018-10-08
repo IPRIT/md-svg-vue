@@ -3,7 +3,7 @@
     name: 'md-view-column',
 
     serverCacheKey: props => {
-      return `md-view-column:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-view-column:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M10 18h5V5h-5v13zm-6 0h5V5H4v13zM16 5v13h5V5h-5z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

@@ -3,7 +3,7 @@
     name: 'md-watch-later',
 
     serverCacheKey: props => {
-      return `md-watch-later:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-watch-later:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm4.2 14.2L11 13V7h1.5v5.2l4.5 2.7-.8 1.3z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

@@ -3,7 +3,7 @@
     name: 'md-format-align-right',
 
     serverCacheKey: props => {
-      return `md-format-align-right:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-format-align-right:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M3 21h18v-2H3v2zm6-4h12v-2H9v2zm-6-4h18v-2H3v2zm6-4h12V7H9v2zM3 3v2h18V3H3z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

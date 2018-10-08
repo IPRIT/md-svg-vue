@@ -3,7 +3,7 @@
     name: 'md-done',
 
     serverCacheKey: props => {
-      return `md-done:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-done:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

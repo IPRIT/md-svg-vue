@@ -3,7 +3,7 @@
     name: 'md-account-balance',
 
     serverCacheKey: props => {
-      return `md-account-balance:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-account-balance:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M4 10v7h3v-7H4zm6 0v7h3v-7h-3zM2 22h19v-3H2v3zm14-12v7h3v-7h-3zm-4.5-9L2 6v2h19V6l-9.5-5z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

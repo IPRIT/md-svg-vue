@@ -3,7 +3,7 @@
     name: 'md-fast-forward',
 
     serverCacheKey: props => {
-      return `md-fast-forward:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-fast-forward:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M4 18l8.5-6L4 6v12zm9-12v12l8.5-6L13 6z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

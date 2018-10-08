@@ -3,7 +3,7 @@
     name: 'md-priority-high',
 
     serverCacheKey: props => {
-      return `md-priority-high:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-priority-high:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M10 3h4v12h-4z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

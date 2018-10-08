@@ -3,7 +3,7 @@
     name: 'md-volume-mute',
 
     serverCacheKey: props => {
-      return `md-volume-mute:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-volume-mute:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M7 9v6h4l5 5V4l-5 5H7z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

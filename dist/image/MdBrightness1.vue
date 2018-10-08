@@ -3,7 +3,7 @@
     name: 'md-brightness-1',
 
     serverCacheKey: props => {
-      return `md-brightness-1:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-brightness-1:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'undefined'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

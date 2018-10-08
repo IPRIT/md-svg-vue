@@ -3,7 +3,7 @@
     name: 'md-dashboard',
 
     serverCacheKey: props => {
-      return `md-dashboard:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-dashboard:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

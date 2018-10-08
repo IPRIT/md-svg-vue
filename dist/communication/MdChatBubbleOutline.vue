@@ -3,7 +3,7 @@
     name: 'md-chat-bubble-outline',
 
     serverCacheKey: props => {
-      return `md-chat-bubble-outline:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-chat-bubble-outline:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

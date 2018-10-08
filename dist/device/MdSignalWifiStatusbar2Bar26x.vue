@@ -3,7 +3,7 @@
     name: 'md-signal-wifi-statusbar-2-bar-26-x',
 
     serverCacheKey: props => {
-      return `md-signal-wifi-statusbar-2-bar-26-x:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-signal-wifi-statusbar-2-bar-26-x:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M13.01 21.99L25.58 6.32C25.1 5.96 20.26 2 13 2S.9 5.96.42 6.32l12.57 15.66.01.02.01-.01z"/><path d="M13.01 21.99l7.54-9.4C20.26 12.38 17.36 10 13 10c-4.36 0-7.26 2.38-7.55 2.59l7.54 9.4h.02z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

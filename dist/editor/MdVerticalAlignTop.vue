@@ -3,7 +3,7 @@
     name: 'md-vertical-align-top',
 
     serverCacheKey: props => {
-      return `md-vertical-align-top:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-vertical-align-top:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M8 11h3v10h2V11h3l-4-4-4 4zM4 3v2h16V3H4z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

@@ -3,7 +3,7 @@
     name: 'md-layers',
 
     serverCacheKey: props => {
-      return `md-layers:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-layers:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M11.99 18.54l-7.37-5.73L3 14.07l9 7 9-7-1.63-1.27-7.38 5.74zM12 16l7.36-5.73L21 9l-9-7-9 7 1.63 1.27L12 16z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

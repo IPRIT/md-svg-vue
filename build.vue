@@ -3,7 +3,7 @@
     name: 'md-{{icon}}',
 
     serverCacheKey: props => {
-      return `md-{{icon}}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-{{icon}}:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: '{{path}}'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

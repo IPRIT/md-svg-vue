@@ -3,7 +3,7 @@
     name: 'md-filter-list',
 
     serverCacheKey: props => {
-      return `md-filter-list:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-filter-list:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

@@ -3,7 +3,7 @@
     name: 'md-feedback',
 
     serverCacheKey: props => {
-      return `md-feedback:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-feedback:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 12h-2v-2h2v2zm0-4h-2V6h2v4z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

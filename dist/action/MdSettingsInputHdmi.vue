@@ -3,7 +3,7 @@
     name: 'md-settings-input-hdmi',
 
     serverCacheKey: props => {
-      return `md-settings-input-hdmi:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-settings-input-hdmi:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M18 7V4c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v3H5v6l3 6v3h8v-3l3-6V7h-1zM8 4h8v3h-2V5h-1v2h-2V5h-1v2H8V4z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

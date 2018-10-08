@@ -3,7 +3,7 @@
     name: 'md-assistant-photo',
 
     serverCacheKey: props => {
-      return `md-assistant-photo:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-assistant-photo:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M14.4 6L14 4H5v17h2v-7h5.6l.4 2h7V6z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

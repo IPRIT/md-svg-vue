@@ -3,7 +3,7 @@
     name: 'md-keyboard-arrow-up',
 
     serverCacheKey: props => {
-      return `md-keyboard-arrow-up:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-keyboard-arrow-up:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

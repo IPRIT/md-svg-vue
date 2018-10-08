@@ -3,7 +3,7 @@
     name: 'md-arrow-drop-down-circle',
 
     serverCacheKey: props => {
-      return `md-arrow-drop-down-circle:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-arrow-drop-down-circle:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 12l-4-4h8l-4 4z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

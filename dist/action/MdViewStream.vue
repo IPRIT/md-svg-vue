@@ -3,7 +3,7 @@
     name: 'md-view-stream',
 
     serverCacheKey: props => {
-      return `md-view-stream:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-view-stream:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M4 18h17v-6H4v6zM4 5v6h17V5H4z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

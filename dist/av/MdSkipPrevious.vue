@@ -3,7 +3,7 @@
     name: 'md-skip-previous',
 
     serverCacheKey: props => {
-      return `md-skip-previous:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-skip-previous:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M6 6h2v12H6zm3.5 6l8.5 6V6z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

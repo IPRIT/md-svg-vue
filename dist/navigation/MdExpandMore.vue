@@ -3,7 +3,7 @@
     name: 'md-expand-more',
 
     serverCacheKey: props => {
-      return `md-expand-more:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-expand-more:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

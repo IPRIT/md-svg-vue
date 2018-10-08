@@ -3,7 +3,7 @@
     name: 'md-file-download',
 
     serverCacheKey: props => {
-      return `md-file-download:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-file-download:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

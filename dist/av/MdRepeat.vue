@@ -3,7 +3,7 @@
     name: 'md-repeat',
 
     serverCacheKey: props => {
-      return `md-repeat:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-repeat:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M7 7h10v3l4-4-4-4v3H5v6h2V7zm10 10H7v-3l-4 4 4 4v-3h12v-6h-2v4z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

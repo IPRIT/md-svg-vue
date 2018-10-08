@@ -3,7 +3,7 @@
     name: 'md-send',
 
     serverCacheKey: props => {
-      return `md-send:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-send:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M2.01 21L23 12 2.01 3 2 10l15 2-15 2z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

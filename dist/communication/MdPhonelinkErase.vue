@@ -3,7 +3,7 @@
     name: 'md-phonelink-erase',
 
     serverCacheKey: props => {
-      return `md-phonelink-erase:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-phonelink-erase:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M13 8.2l-1-1-4 4-4-4-1 1 4 4-4 4 1 1 4-4 4 4 1-1-4-4 4-4zM19 1H9c-1.1 0-2 .9-2 2v3h2V4h10v16H9v-2H7v3c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-2-2-2z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

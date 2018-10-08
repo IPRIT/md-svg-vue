@@ -3,7 +3,7 @@
     name: 'md-navigation',
 
     serverCacheKey: props => {
-      return `md-navigation:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-navigation:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

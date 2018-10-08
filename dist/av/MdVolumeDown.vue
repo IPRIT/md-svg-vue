@@ -3,7 +3,7 @@
     name: 'md-volume-down',
 
     serverCacheKey: props => {
-      return `md-volume-down:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-volume-down:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M18.5 12c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM5 9v6h4l5 5V4L9 9H5z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

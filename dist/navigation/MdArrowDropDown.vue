@@ -3,7 +3,7 @@
     name: 'md-arrow-drop-down',
 
     serverCacheKey: props => {
-      return `md-arrow-drop-down:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-arrow-drop-down:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M7 10l5 5 5-5z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

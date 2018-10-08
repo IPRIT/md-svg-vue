@@ -3,7 +3,7 @@
     name: 'md-show-chart',
 
     serverCacheKey: props => {
-      return `md-show-chart:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-show-chart:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M3.5 18.49l6-6.01 4 4L22 6.92l-1.41-1.41-7.09 7.97-4-4L2 16.99z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

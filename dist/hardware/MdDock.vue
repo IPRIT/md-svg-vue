@@ -3,7 +3,7 @@
     name: 'md-dock',
 
     serverCacheKey: props => {
-      return `md-dock:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-dock:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M8 23h8v-2H8v2zm8-21.99L8 1c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM16 15H8V5h8v10z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

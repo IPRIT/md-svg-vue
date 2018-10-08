@@ -3,7 +3,7 @@
     name: 'md-format-textdirection-l-to-r',
 
     serverCacheKey: props => {
-      return `md-format-textdirection-l-to-r:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-format-textdirection-l-to-r:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M9 10v5h2V4h2v11h2V4h2V2H9C6.79 2 5 3.79 5 6s1.79 4 4 4zm12 8l-4-4v3H5v2h12v3l4-4z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

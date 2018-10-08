@@ -3,7 +3,7 @@
     name: 'md-exposure-plus-1',
 
     serverCacheKey: props => {
-      return `md-exposure-plus-1:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-exposure-plus-1:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M10 7H8v4H4v2h4v4h2v-4h4v-2h-4V7zm10 11h-2V7.38L15 8.4V6.7L19.7 5h.3v13z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

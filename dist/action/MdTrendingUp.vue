@@ -3,7 +3,7 @@
     name: 'md-trending-up',
 
     serverCacheKey: props => {
-      return `md-trending-up:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-trending-up:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

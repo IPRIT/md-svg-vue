@@ -3,7 +3,7 @@
     name: 'md-local-hotel',
 
     serverCacheKey: props => {
-      return `md-local-hotel:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-local-hotel:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M7 13c1.66 0 3-1.34 3-3S8.66 7 7 7s-3 1.34-3 3 1.34 3 3 3zm12-6h-8v7H3V5H1v15h2v-3h18v3h2v-9c0-2.21-1.79-4-4-4z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

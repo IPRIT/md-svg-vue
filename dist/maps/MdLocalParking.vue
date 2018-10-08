@@ -3,7 +3,7 @@
     name: 'md-local-parking',
 
     serverCacheKey: props => {
-      return `md-local-parking:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-local-parking:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M13 3H6v18h4v-6h3c3.31 0 6-2.69 6-6s-2.69-6-6-6zm.2 8H10V7h3.2c1.1 0 2 .9 2 2s-.9 2-2 2z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

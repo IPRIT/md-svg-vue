@@ -3,7 +3,7 @@
     name: 'md-view-compact',
 
     serverCacheKey: props => {
-      return `md-view-compact:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-view-compact:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M3 19h6v-7H3v7zm7 0h12v-7H10v7zM3 5v6h19V5H3z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

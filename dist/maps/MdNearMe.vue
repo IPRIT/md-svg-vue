@@ -3,7 +3,7 @@
     name: 'md-near-me',
 
     serverCacheKey: props => {
-      return `md-near-me:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-near-me:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M21 3L3 10.53v.98l6.84 2.65L12.48 21h.98L21 3z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

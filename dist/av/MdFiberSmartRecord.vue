@@ -3,7 +3,7 @@
     name: 'md-fiber-smart-record',
 
     serverCacheKey: props => {
-      return `md-fiber-smart-record:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-fiber-smart-record:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M17 4.26v2.09c2.33.82 4 3.04 4 5.65s-1.67 4.83-4 5.65v2.09c3.45-.89 6-4.01 6-7.74s-2.55-6.85-6-7.74z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

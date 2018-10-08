@@ -3,7 +3,7 @@
     name: 'md-accessibility',
 
     serverCacheKey: props => {
-      return `md-accessibility:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-accessibility:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M12 2c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm9 7h-6v13h-2v-6h-2v6H9V9H3V7h18v2z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

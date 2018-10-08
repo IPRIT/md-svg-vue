@@ -3,7 +3,7 @@
     name: 'md-drag-handle',
 
     serverCacheKey: props => {
-      return `md-drag-handle:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-drag-handle:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M20 9H4v2h16V9zM4 15h16v-2H4v2z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

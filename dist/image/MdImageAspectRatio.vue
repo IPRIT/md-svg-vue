@@ -3,7 +3,7 @@
     name: 'md-image-aspect-ratio',
 
     serverCacheKey: props => {
-      return `md-image-aspect-ratio:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-image-aspect-ratio:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M16 10h-2v2h2v-2zm0 4h-2v2h2v-2zm-8-4H6v2h2v-2zm4 0h-2v2h2v-2zm8-6H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V6h16v12z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

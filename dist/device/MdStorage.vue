@@ -3,7 +3,7 @@
     name: 'md-storage',
 
     serverCacheKey: props => {
-      return `md-storage:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-storage:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M2 20h20v-4H2v4zm2-3h2v2H4v-2zM2 4v4h20V4H2zm4 3H4V5h2v2zm-4 7h20v-4H2v4zm2-3h2v2H4v-2z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

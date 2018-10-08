@@ -3,7 +3,7 @@
     name: 'md-play-arrow',
 
     serverCacheKey: props => {
-      return `md-play-arrow:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-play-arrow:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M8 5v14l11-7z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

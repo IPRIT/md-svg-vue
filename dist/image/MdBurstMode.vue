@@ -3,7 +3,7 @@
     name: 'md-burst-mode',
 
     serverCacheKey: props => {
-      return `md-burst-mode:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-burst-mode:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M1 5h2v14H1zm4 0h2v14H5zm17 0H10c-.55 0-1 .45-1 1v12c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1zM11 17l2.5-3.15L15.29 16l2.5-3.22L21 17H11z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

@@ -3,7 +3,7 @@
     name: 'md-first-page',
 
     serverCacheKey: props => {
-      return `md-first-page:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-first-page:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M18.41 16.59L13.82 12l4.59-4.59L17 6l-6 6 6 6zM6 6h2v12H6z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

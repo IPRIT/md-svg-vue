@@ -3,7 +3,7 @@
     name: 'md-school',
 
     serverCacheKey: props => {
-      return `md-school:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-school:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

@@ -3,7 +3,7 @@
     name: 'md-view-day',
 
     serverCacheKey: props => {
-      return `md-view-day:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-view-day:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M2 21h19v-3H2v3zM20 8H3c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h17c.55 0 1-.45 1-1V9c0-.55-.45-1-1-1zM2 3v3h19V3H2z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

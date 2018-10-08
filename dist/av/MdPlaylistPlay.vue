@@ -3,7 +3,7 @@
     name: 'md-playlist-play',
 
     serverCacheKey: props => {
-      return `md-playlist-play:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-playlist-play:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M19 9H2v2h17V9zm0-4H2v2h17V5zM2 15h13v-2H2v2zm15-2v6l5-3-5-3z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

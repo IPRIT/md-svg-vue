@@ -3,7 +3,7 @@
     name: 'md-view-headline',
 
     serverCacheKey: props => {
-      return `md-view-headline:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-view-headline:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M4 15h16v-2H4v2zm0 4h16v-2H4v2zm0-8h16V9H4v2zm0-6v2h16V5H4z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

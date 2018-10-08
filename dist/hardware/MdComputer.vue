@@ -3,7 +3,7 @@
     name: 'md-computer',
 
     serverCacheKey: props => {
-      return `md-computer:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-computer:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M20 18c1.1 0 1.99-.9 1.99-2L22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

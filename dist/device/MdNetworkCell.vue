@@ -3,7 +3,7 @@
     name: 'md-network-cell',
 
     serverCacheKey: props => {
-      return `md-network-cell:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-network-cell:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M2 22h20V2z"/><path d="M17 7L2 22h15z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

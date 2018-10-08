@@ -3,7 +3,7 @@
     name: 'md-call-received',
 
     serverCacheKey: props => {
-      return `md-call-received:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-call-received:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M20 5.41L18.59 4 7 15.59V9H5v10h10v-2H8.41z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

@@ -3,7 +3,7 @@
     name: 'md-call-missed-outgoing',
 
     serverCacheKey: props => {
-      return `md-call-missed-outgoing:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-call-missed-outgoing:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M3 8.41l9 9 7-7V15h2V7h-8v2h4.59L12 14.59 4.41 7 3 8.41z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

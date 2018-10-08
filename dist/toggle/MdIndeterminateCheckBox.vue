@@ -3,7 +3,7 @@
     name: 'md-indeterminate-check-box',
 
     serverCacheKey: props => {
-      return `md-indeterminate-check-box:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-indeterminate-check-box:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10H7v-2h10v2z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

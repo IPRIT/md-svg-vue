@@ -3,7 +3,7 @@
     name: 'md-signal-cellular-connected-no-internet-2-bar',
 
     serverCacheKey: props => {
-      return `md-signal-cellular-connected-no-internet-2-bar:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-signal-cellular-connected-no-internet-2-bar:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M22 8V2L2 22h16V8z"/><path d="M14 22V10L2 22h12zm6-12v8h2v-8h-2zm0 12h2v-2h-2v2z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

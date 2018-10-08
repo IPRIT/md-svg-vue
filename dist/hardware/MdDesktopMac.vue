@@ -3,7 +3,7 @@
     name: 'md-desktop-mac',
 
     serverCacheKey: props => {
-      return `md-desktop-mac:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-desktop-mac:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M21 2H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h7l-2 3v1h8v-1l-2-3h7c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 12H3V4h18v10z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

@@ -3,7 +3,7 @@
     name: 'md-last-page',
 
     serverCacheKey: props => {
-      return `md-last-page:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-last-page:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M5.59 7.41L10.18 12l-4.59 4.59L7 18l6-6-6-6zM16 6h2v12h-2z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

@@ -3,7 +3,7 @@
     name: 'md-markunread-mailbox',
 
     serverCacheKey: props => {
-      return `md-markunread-mailbox:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-markunread-mailbox:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M20 6H10v6H8V4h6V0H6v6H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

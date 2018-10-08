@@ -3,7 +3,7 @@
     name: 'md-navigate-before',
 
     serverCacheKey: props => {
-      return `md-navigate-before:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-navigate-before:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

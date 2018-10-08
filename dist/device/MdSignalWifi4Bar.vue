@@ -3,7 +3,7 @@
     name: 'md-signal-wifi-4-bar',
 
     serverCacheKey: props => {
-      return `md-signal-wifi-4-bar:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-signal-wifi-4-bar:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M12.01 21.49L23.64 7c-.45-.34-4.93-4-11.64-4C5.28 3 .81 6.66.36 7l11.63 14.49.01.01.01-.01z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

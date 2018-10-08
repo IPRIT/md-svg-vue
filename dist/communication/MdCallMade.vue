@@ -3,7 +3,7 @@
     name: 'md-call-made',
 
     serverCacheKey: props => {
-      return `md-call-made:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-call-made:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M9 5v2h6.59L4 18.59 5.41 20 17 8.41V15h2V5z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

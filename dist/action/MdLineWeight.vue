@@ -3,7 +3,7 @@
     name: 'md-line-weight',
 
     serverCacheKey: props => {
-      return `md-line-weight:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-line-weight:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M3 17h18v-2H3v2zm0 3h18v-1H3v1zm0-7h18v-3H3v3zm0-9v4h18V4H3z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

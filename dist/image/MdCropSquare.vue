@@ -3,7 +3,7 @@
     name: 'md-crop-square',
 
     serverCacheKey: props => {
-      return `md-crop-square:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-crop-square:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M18 4H6c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H6V6h12v12z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

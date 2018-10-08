@@ -3,7 +3,7 @@
     name: 'md-desktop-windows',
 
     serverCacheKey: props => {
-      return `md-desktop-windows:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-desktop-windows:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M21 2H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h7v2H8v2h8v-2h-2v-2h7c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H3V4h18v12z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

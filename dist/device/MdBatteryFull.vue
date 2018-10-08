@@ -3,7 +3,7 @@
     name: 'md-battery-full',
 
     serverCacheKey: props => {
-      return `md-battery-full:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-battery-full:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M15.67 4H14V2h-4v2H8.33C7.6 4 7 4.6 7 5.33v15.33C7 21.4 7.6 22 8.33 22h7.33c.74 0 1.34-.6 1.34-1.33V5.33C17 4.6 16.4 4 15.67 4z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);

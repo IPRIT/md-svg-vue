@@ -3,7 +3,7 @@
     name: 'md-eject',
 
     serverCacheKey: props => {
-      return `md-eject:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-eject:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
@@ -19,7 +19,8 @@
       viewBox: {
         type: String,
         'default': '0 0 24 24',
-      }
+      },
+      color: String
     },
 
     render (h) {
@@ -38,6 +39,9 @@
         h('path', {
           attrs: {
             d: 'M5 17h14v2H5zm7-12L5.33 15h13.34z'
+          },
+          style: {
+            fill: this.color
           }
         })
       ]);
