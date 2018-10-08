@@ -3,7 +3,7 @@
     name: 'md-delete-sweep',
 
     serverCacheKey: props => {
-      return `md-delete-sweep:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-delete-sweep:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

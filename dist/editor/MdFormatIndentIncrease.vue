@@ -3,7 +3,7 @@
     name: 'md-format-indent-increase',
 
     serverCacheKey: props => {
-      return `md-format-indent-increase:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-format-indent-increase:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

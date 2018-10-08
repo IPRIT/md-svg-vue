@@ -3,7 +3,7 @@
     name: 'md-cloud-queue',
 
     serverCacheKey: props => {
-      return `md-cloud-queue:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-cloud-queue:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

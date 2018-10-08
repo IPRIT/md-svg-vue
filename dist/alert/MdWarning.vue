@@ -3,7 +3,7 @@
     name: 'md-warning',
 
     serverCacheKey: props => {
-      return `md-warning:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-warning:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

@@ -3,7 +3,7 @@
     name: 'md-music-note',
 
     serverCacheKey: props => {
-      return `md-music-note:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-music-note:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

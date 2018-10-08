@@ -3,7 +3,7 @@
     name: 'md-shopping-cart',
 
     serverCacheKey: props => {
-      return `md-shopping-cart:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-shopping-cart:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

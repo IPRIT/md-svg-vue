@@ -3,7 +3,7 @@
     name: 'md-network-cell',
 
     serverCacheKey: props => {
-      return `md-network-cell:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-network-cell:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

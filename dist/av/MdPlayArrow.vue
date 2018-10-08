@@ -3,7 +3,7 @@
     name: 'md-play-arrow',
 
     serverCacheKey: props => {
-      return `md-play-arrow:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-play-arrow:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

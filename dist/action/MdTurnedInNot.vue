@@ -3,7 +3,7 @@
     name: 'md-turned-in-not',
 
     serverCacheKey: props => {
-      return `md-turned-in-not:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-turned-in-not:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

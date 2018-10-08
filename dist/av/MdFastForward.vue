@@ -3,7 +3,7 @@
     name: 'md-fast-forward',
 
     serverCacheKey: props => {
-      return `md-fast-forward:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-fast-forward:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

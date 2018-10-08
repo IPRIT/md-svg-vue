@@ -3,7 +3,7 @@
     name: 'md-redo',
 
     serverCacheKey: props => {
-      return `md-redo:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-redo:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

@@ -3,7 +3,7 @@
     name: 'md-flip-to-front',
 
     serverCacheKey: props => {
-      return `md-flip-to-front:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-flip-to-front:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

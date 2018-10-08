@@ -3,7 +3,7 @@
     name: 'md-content-cut',
 
     serverCacheKey: props => {
-      return `md-content-cut:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-content-cut:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

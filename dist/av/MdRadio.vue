@@ -3,7 +3,7 @@
     name: 'md-radio',
 
     serverCacheKey: props => {
-      return `md-radio:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-radio:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

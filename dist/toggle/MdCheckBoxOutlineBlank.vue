@@ -3,7 +3,7 @@
     name: 'md-check-box-outline-blank',
 
     serverCacheKey: props => {
-      return `md-check-box-outline-blank:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-check-box-outline-blank:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

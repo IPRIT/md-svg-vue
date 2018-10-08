@@ -3,7 +3,7 @@
     name: 'md-hdr-strong',
 
     serverCacheKey: props => {
-      return `md-hdr-strong:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-hdr-strong:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

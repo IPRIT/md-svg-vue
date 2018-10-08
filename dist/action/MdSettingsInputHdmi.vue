@@ -3,7 +3,7 @@
     name: 'md-settings-input-hdmi',
 
     serverCacheKey: props => {
-      return `md-settings-input-hdmi:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-settings-input-hdmi:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

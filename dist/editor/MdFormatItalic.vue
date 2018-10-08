@@ -3,7 +3,7 @@
     name: 'md-format-italic',
 
     serverCacheKey: props => {
-      return `md-format-italic:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-format-italic:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

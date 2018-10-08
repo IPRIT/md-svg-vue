@@ -3,7 +3,7 @@
     name: 'md-directions',
 
     serverCacheKey: props => {
-      return `md-directions:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-directions:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

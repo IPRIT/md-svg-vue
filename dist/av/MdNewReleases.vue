@@ -3,7 +3,7 @@
     name: 'md-new-releases',
 
     serverCacheKey: props => {
-      return `md-new-releases:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-new-releases:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

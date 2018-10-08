@@ -3,7 +3,7 @@
     name: 'md-eject',
 
     serverCacheKey: props => {
-      return `md-eject:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-eject:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

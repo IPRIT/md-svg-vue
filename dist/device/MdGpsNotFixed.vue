@@ -3,7 +3,7 @@
     name: 'md-gps-not-fixed',
 
     serverCacheKey: props => {
-      return `md-gps-not-fixed:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-gps-not-fixed:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

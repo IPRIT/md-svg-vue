@@ -3,7 +3,7 @@
     name: 'md-dehaze',
 
     serverCacheKey: props => {
-      return `md-dehaze:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-dehaze:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

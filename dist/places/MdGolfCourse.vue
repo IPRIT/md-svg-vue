@@ -3,7 +3,7 @@
     name: 'md-golf-course',
 
     serverCacheKey: props => {
-      return `md-golf-course:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-golf-course:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

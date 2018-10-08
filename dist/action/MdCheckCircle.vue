@@ -3,7 +3,7 @@
     name: 'md-check-circle',
 
     serverCacheKey: props => {
-      return `md-check-circle:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-check-circle:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

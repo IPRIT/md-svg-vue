@@ -3,7 +3,7 @@
     name: 'md-local-offer',
 
     serverCacheKey: props => {
-      return `md-local-offer:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-local-offer:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

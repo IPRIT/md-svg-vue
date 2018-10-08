@@ -3,7 +3,7 @@
     name: 'md-local-bar',
 
     serverCacheKey: props => {
-      return `md-local-bar:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-local-bar:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

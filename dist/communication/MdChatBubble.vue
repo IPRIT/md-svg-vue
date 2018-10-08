@@ -3,7 +3,7 @@
     name: 'md-chat-bubble',
 
     serverCacheKey: props => {
-      return `md-chat-bubble:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-chat-bubble:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

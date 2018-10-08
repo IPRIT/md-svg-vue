@@ -3,7 +3,7 @@
     name: 'md-vignette',
 
     serverCacheKey: props => {
-      return `md-vignette:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-vignette:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

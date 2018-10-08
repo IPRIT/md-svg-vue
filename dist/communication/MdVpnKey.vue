@@ -3,7 +3,7 @@
     name: 'md-vpn-key',
 
     serverCacheKey: props => {
-      return `md-vpn-key:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-vpn-key:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

@@ -3,7 +3,7 @@
     name: 'md-looks-two',
 
     serverCacheKey: props => {
-      return `md-looks-two:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-looks-two:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

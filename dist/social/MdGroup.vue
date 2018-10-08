@@ -3,7 +3,7 @@
     name: 'md-group',
 
     serverCacheKey: props => {
-      return `md-group:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-group:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

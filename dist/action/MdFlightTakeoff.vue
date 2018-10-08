@@ -3,7 +3,7 @@
     name: 'md-flight-takeoff',
 
     serverCacheKey: props => {
-      return `md-flight-takeoff:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-flight-takeoff:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

@@ -3,7 +3,7 @@
     name: 'md-not-interested',
 
     serverCacheKey: props => {
-      return `md-not-interested:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-not-interested:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

@@ -3,7 +3,7 @@
     name: 'md-restaurant',
 
     serverCacheKey: props => {
-      return `md-restaurant:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-restaurant:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

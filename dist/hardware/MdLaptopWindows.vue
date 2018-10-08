@@ -3,7 +3,7 @@
     name: 'md-laptop-windows',
 
     serverCacheKey: props => {
-      return `md-laptop-windows:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-laptop-windows:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

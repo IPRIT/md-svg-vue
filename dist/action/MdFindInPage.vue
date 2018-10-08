@@ -3,7 +3,7 @@
     name: 'md-find-in-page',
 
     serverCacheKey: props => {
-      return `md-find-in-page:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-find-in-page:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

@@ -3,7 +3,7 @@
     name: 'md-swap-vertical-circle',
 
     serverCacheKey: props => {
-      return `md-swap-vertical-circle:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-swap-vertical-circle:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

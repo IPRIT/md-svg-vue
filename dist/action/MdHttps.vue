@@ -3,7 +3,7 @@
     name: 'md-https',
 
     serverCacheKey: props => {
-      return `md-https:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-https:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

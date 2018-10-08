@@ -3,7 +3,7 @@
     name: 'md-drafts',
 
     serverCacheKey: props => {
-      return `md-drafts:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-drafts:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

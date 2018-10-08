@@ -3,7 +3,7 @@
     name: 'md-traffic',
 
     serverCacheKey: props => {
-      return `md-traffic:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-traffic:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

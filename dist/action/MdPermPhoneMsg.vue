@@ -3,7 +3,7 @@
     name: 'md-perm-phone-msg',
 
     serverCacheKey: props => {
-      return `md-perm-phone-msg:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-perm-phone-msg:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

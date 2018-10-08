@@ -3,7 +3,7 @@
     name: 'md-library-music',
 
     serverCacheKey: props => {
-      return `md-library-music:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-library-music:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

@@ -3,7 +3,7 @@
     name: 'md-swap-calls',
 
     serverCacheKey: props => {
-      return `md-swap-calls:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-swap-calls:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

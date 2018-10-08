@@ -3,7 +3,7 @@
     name: 'md-call-split',
 
     serverCacheKey: props => {
-      return `md-call-split:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-call-split:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

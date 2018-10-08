@@ -3,7 +3,7 @@
     name: 'md-vertical-align-center',
 
     serverCacheKey: props => {
-      return `md-vertical-align-center:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-vertical-align-center:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

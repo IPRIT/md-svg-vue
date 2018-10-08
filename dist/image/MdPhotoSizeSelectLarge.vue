@@ -3,7 +3,7 @@
     name: 'md-photo-size-select-large',
 
     serverCacheKey: props => {
-      return `md-photo-size-select-large:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-photo-size-select-large:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

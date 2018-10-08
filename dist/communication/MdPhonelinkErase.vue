@@ -3,7 +3,7 @@
     name: 'md-phonelink-erase',
 
     serverCacheKey: props => {
-      return `md-phonelink-erase:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-phonelink-erase:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

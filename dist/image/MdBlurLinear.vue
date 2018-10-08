@@ -3,7 +3,7 @@
     name: 'md-blur-linear',
 
     serverCacheKey: props => {
-      return `md-blur-linear:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-blur-linear:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

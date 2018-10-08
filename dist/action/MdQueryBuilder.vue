@@ -3,7 +3,7 @@
     name: 'md-query-builder',
 
     serverCacheKey: props => {
-      return `md-query-builder:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-query-builder:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

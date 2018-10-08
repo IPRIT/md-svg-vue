@@ -3,7 +3,7 @@
     name: 'md-exposure',
 
     serverCacheKey: props => {
-      return `md-exposure:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-exposure:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

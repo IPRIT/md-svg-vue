@@ -3,7 +3,7 @@
     name: 'md-insert-drive-file',
 
     serverCacheKey: props => {
-      return `md-insert-drive-file:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-insert-drive-file:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

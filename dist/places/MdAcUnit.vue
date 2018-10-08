@@ -3,7 +3,7 @@
     name: 'md-ac-unit',
 
     serverCacheKey: props => {
-      return `md-ac-unit:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-ac-unit:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

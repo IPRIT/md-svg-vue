@@ -3,7 +3,7 @@
     name: 'md-rss-feed',
 
     serverCacheKey: props => {
-      return `md-rss-feed:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-rss-feed:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

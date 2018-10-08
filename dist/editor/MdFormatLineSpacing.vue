@@ -3,7 +3,7 @@
     name: 'md-format-line-spacing',
 
     serverCacheKey: props => {
-      return `md-format-line-spacing:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-format-line-spacing:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

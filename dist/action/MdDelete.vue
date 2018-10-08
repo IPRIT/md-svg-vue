@@ -3,7 +3,7 @@
     name: 'md-delete',
 
     serverCacheKey: props => {
-      return `md-delete:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-delete:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

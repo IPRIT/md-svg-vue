@@ -3,7 +3,7 @@
     name: 'md-device-hub',
 
     serverCacheKey: props => {
-      return `md-device-hub:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-device-hub:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

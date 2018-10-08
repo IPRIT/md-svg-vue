@@ -3,7 +3,7 @@
     name: 'md-pets',
 
     serverCacheKey: props => {
-      return `md-pets:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-pets:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

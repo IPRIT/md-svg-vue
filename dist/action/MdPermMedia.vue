@@ -3,7 +3,7 @@
     name: 'md-perm-media',
 
     serverCacheKey: props => {
-      return `md-perm-media:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-perm-media:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

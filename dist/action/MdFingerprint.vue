@@ -3,7 +3,7 @@
     name: 'md-fingerprint',
 
     serverCacheKey: props => {
-      return `md-fingerprint:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-fingerprint:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

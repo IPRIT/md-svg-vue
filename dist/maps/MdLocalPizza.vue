@@ -3,7 +3,7 @@
     name: 'md-local-pizza',
 
     serverCacheKey: props => {
-      return `md-local-pizza:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-local-pizza:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

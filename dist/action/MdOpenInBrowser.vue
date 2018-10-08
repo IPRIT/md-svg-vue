@@ -3,7 +3,7 @@
     name: 'md-open-in-browser',
 
     serverCacheKey: props => {
-      return `md-open-in-browser:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-open-in-browser:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

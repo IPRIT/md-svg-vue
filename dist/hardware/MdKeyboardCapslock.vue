@@ -3,7 +3,7 @@
     name: 'md-keyboard-capslock',
 
     serverCacheKey: props => {
-      return `md-keyboard-capslock:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-keyboard-capslock:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

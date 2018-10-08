@@ -3,7 +3,7 @@
     name: 'md-chrome-reader-mode',
 
     serverCacheKey: props => {
-      return `md-chrome-reader-mode:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-chrome-reader-mode:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

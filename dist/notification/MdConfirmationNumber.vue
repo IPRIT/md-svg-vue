@@ -3,7 +3,7 @@
     name: 'md-confirmation-number',
 
     serverCacheKey: props => {
-      return `md-confirmation-number:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-confirmation-number:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

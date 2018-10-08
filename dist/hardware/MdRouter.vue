@@ -3,7 +3,7 @@
     name: 'md-router',
 
     serverCacheKey: props => {
-      return `md-router:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-router:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

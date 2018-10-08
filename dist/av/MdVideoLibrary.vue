@@ -3,7 +3,7 @@
     name: 'md-video-library',
 
     serverCacheKey: props => {
-      return `md-video-library:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-video-library:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

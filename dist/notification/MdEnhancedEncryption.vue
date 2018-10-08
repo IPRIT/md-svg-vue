@@ -3,7 +3,7 @@
     name: 'md-enhanced-encryption',
 
     serverCacheKey: props => {
-      return `md-enhanced-encryption:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-enhanced-encryption:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

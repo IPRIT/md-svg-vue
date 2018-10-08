@@ -3,7 +3,7 @@
     name: 'md-format-align-right',
 
     serverCacheKey: props => {
-      return `md-format-align-right:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-format-align-right:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

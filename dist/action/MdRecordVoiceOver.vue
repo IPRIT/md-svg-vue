@@ -3,7 +3,7 @@
     name: 'md-record-voice-over',
 
     serverCacheKey: props => {
-      return `md-record-voice-over:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-record-voice-over:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

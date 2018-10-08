@@ -3,7 +3,7 @@
     name: 'md-directions-walk',
 
     serverCacheKey: props => {
-      return `md-directions-walk:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-directions-walk:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

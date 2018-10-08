@@ -3,7 +3,7 @@
     name: 'md-screen-rotation',
 
     serverCacheKey: props => {
-      return `md-screen-rotation:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-screen-rotation:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

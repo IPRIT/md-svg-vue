@@ -3,7 +3,7 @@
     name: 'md-view-array',
 
     serverCacheKey: props => {
-      return `md-view-array:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-view-array:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

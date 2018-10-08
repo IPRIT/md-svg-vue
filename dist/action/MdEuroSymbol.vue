@@ -3,7 +3,7 @@
     name: 'md-euro-symbol',
 
     serverCacheKey: props => {
-      return `md-euro-symbol:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-euro-symbol:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

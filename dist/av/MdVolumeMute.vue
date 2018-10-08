@@ -3,7 +3,7 @@
     name: 'md-volume-mute',
 
     serverCacheKey: props => {
-      return `md-volume-mute:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-volume-mute:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

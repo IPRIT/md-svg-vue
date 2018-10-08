@@ -3,7 +3,7 @@
     name: 'md-directions-boat',
 
     serverCacheKey: props => {
-      return `md-directions-boat:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-directions-boat:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

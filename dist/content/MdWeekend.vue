@@ -3,7 +3,7 @@
     name: 'md-weekend',
 
     serverCacheKey: props => {
-      return `md-weekend:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-weekend:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

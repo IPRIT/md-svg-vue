@@ -3,7 +3,7 @@
     name: 'md-insert-link',
 
     serverCacheKey: props => {
-      return `md-insert-link:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-insert-link:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

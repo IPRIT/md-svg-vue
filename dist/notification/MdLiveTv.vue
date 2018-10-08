@@ -3,7 +3,7 @@
     name: 'md-live-tv',
 
     serverCacheKey: props => {
-      return `md-live-tv:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-live-tv:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

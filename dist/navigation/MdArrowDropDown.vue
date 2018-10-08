@@ -3,7 +3,7 @@
     name: 'md-arrow-drop-down',
 
     serverCacheKey: props => {
-      return `md-arrow-drop-down:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-arrow-drop-down:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

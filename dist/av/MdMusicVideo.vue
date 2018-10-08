@@ -3,7 +3,7 @@
     name: 'md-music-video',
 
     serverCacheKey: props => {
-      return `md-music-video:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-music-video:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

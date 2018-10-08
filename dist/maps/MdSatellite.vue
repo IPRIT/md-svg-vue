@@ -3,7 +3,7 @@
     name: 'md-satellite',
 
     serverCacheKey: props => {
-      return `md-satellite:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-satellite:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

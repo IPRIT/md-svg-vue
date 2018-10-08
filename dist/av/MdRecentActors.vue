@@ -3,7 +3,7 @@
     name: 'md-recent-actors',
 
     serverCacheKey: props => {
-      return `md-recent-actors:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-recent-actors:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

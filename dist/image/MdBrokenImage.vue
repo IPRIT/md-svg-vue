@@ -3,7 +3,7 @@
     name: 'md-broken-image',
 
     serverCacheKey: props => {
-      return `md-broken-image:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-broken-image:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

@@ -3,7 +3,7 @@
     name: 'md-priority-high',
 
     serverCacheKey: props => {
-      return `md-priority-high:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-priority-high:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

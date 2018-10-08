@@ -3,7 +3,7 @@
     name: 'md-present-to-all',
 
     serverCacheKey: props => {
-      return `md-present-to-all:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-present-to-all:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

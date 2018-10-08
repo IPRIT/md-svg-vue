@@ -3,7 +3,7 @@
     name: 'md-screen-lock-landscape',
 
     serverCacheKey: props => {
-      return `md-screen-lock-landscape:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-screen-lock-landscape:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

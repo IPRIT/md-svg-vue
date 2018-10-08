@@ -3,7 +3,7 @@
     name: 'md-format-quote',
 
     serverCacheKey: props => {
-      return `md-format-quote:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-format-quote:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

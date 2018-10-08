@@ -3,7 +3,7 @@
     name: 'md-call-made',
 
     serverCacheKey: props => {
-      return `md-call-made:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-call-made:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

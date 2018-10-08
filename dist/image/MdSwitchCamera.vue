@@ -3,7 +3,7 @@
     name: 'md-switch-camera',
 
     serverCacheKey: props => {
-      return `md-switch-camera:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-switch-camera:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

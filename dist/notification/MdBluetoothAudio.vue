@@ -3,7 +3,7 @@
     name: 'md-bluetooth-audio',
 
     serverCacheKey: props => {
-      return `md-bluetooth-audio:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-bluetooth-audio:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

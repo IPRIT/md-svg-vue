@@ -3,7 +3,7 @@
     name: 'md-adb',
 
     serverCacheKey: props => {
-      return `md-adb:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-adb:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

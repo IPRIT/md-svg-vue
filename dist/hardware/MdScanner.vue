@@ -3,7 +3,7 @@
     name: 'md-scanner',
 
     serverCacheKey: props => {
-      return `md-scanner:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-scanner:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

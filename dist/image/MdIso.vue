@@ -3,7 +3,7 @@
     name: 'md-iso',
 
     serverCacheKey: props => {
-      return `md-iso:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-iso:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

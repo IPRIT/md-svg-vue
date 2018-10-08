@@ -3,7 +3,7 @@
     name: 'md-person-pin',
 
     serverCacheKey: props => {
-      return `md-person-pin:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-person-pin:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

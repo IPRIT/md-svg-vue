@@ -3,7 +3,7 @@
     name: 'md-format-size',
 
     serverCacheKey: props => {
-      return `md-format-size:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-format-size:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

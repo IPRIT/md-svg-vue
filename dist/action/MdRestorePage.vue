@@ -3,7 +3,7 @@
     name: 'md-restore-page',
 
     serverCacheKey: props => {
-      return `md-restore-page:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-restore-page:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

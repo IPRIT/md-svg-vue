@@ -3,7 +3,7 @@
     name: 'md-local-car-wash',
 
     serverCacheKey: props => {
-      return `md-local-car-wash:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-local-car-wash:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

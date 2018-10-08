@@ -3,7 +3,7 @@
     name: 'md-crop-rotate',
 
     serverCacheKey: props => {
-      return `md-crop-rotate:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-crop-rotate:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

@@ -3,7 +3,7 @@
     name: 'md-filter-tilt-shift',
 
     serverCacheKey: props => {
-      return `md-filter-tilt-shift:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-filter-tilt-shift:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

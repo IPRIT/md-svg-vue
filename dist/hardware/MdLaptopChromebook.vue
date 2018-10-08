@@ -3,7 +3,7 @@
     name: 'md-laptop-chromebook',
 
     serverCacheKey: props => {
-      return `md-laptop-chromebook:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-laptop-chromebook:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

@@ -3,7 +3,7 @@
     name: 'md-tap-and-play',
 
     serverCacheKey: props => {
-      return `md-tap-and-play:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-tap-and-play:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

@@ -3,7 +3,7 @@
     name: 'md-event-seat',
 
     serverCacheKey: props => {
-      return `md-event-seat:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-event-seat:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

@@ -3,7 +3,7 @@
     name: 'md-star-border',
 
     serverCacheKey: props => {
-      return `md-star-border:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-star-border:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

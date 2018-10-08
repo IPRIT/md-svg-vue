@@ -3,7 +3,7 @@
     name: 'md-art-track',
 
     serverCacheKey: props => {
-      return `md-art-track:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-art-track:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

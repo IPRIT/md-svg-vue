@@ -3,7 +3,7 @@
     name: 'md-3-d-rotation',
 
     serverCacheKey: props => {
-      return `md-3-d-rotation:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-3-d-rotation:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

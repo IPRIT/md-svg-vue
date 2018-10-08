@@ -3,7 +3,7 @@
     name: 'md-first-page',
 
     serverCacheKey: props => {
-      return `md-first-page:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-first-page:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

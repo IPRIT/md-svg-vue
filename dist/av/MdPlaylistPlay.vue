@@ -3,7 +3,7 @@
     name: 'md-playlist-play',
 
     serverCacheKey: props => {
-      return `md-playlist-play:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-playlist-play:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

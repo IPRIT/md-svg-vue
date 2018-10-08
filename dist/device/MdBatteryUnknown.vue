@@ -3,7 +3,7 @@
     name: 'md-battery-unknown',
 
     serverCacheKey: props => {
-      return `md-battery-unknown:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-battery-unknown:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

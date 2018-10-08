@@ -3,7 +3,7 @@
     name: 'md-landscape',
 
     serverCacheKey: props => {
-      return `md-landscape:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-landscape:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

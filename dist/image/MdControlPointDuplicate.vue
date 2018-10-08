@@ -3,7 +3,7 @@
     name: 'md-control-point-duplicate',
 
     serverCacheKey: props => {
-      return `md-control-point-duplicate:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-control-point-duplicate:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

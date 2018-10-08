@@ -3,7 +3,7 @@
     name: 'md-phonelink-setup',
 
     serverCacheKey: props => {
-      return `md-phonelink-setup:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-phonelink-setup:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

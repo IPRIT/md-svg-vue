@@ -3,7 +3,7 @@
     name: 'md-notifications-none',
 
     serverCacheKey: props => {
-      return `md-notifications-none:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-notifications-none:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

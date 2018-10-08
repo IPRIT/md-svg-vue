@@ -3,7 +3,7 @@
     name: 'md-time-to-leave',
 
     serverCacheKey: props => {
-      return `md-time-to-leave:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-time-to-leave:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

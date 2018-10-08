@@ -3,7 +3,7 @@
     name: 'md-aspect-ratio',
 
     serverCacheKey: props => {
-      return `md-aspect-ratio:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-aspect-ratio:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

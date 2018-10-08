@@ -3,7 +3,7 @@
     name: 'md-crop',
 
     serverCacheKey: props => {
-      return `md-crop:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-crop:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

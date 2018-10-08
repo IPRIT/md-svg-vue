@@ -3,7 +3,7 @@
     name: 'md-attach-money',
 
     serverCacheKey: props => {
-      return `md-attach-money:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-attach-money:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

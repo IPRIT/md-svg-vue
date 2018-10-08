@@ -3,7 +3,7 @@
     name: 'md-shuffle',
 
     serverCacheKey: props => {
-      return `md-shuffle:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-shuffle:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

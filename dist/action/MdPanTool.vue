@@ -3,7 +3,7 @@
     name: 'md-pan-tool',
 
     serverCacheKey: props => {
-      return `md-pan-tool:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-pan-tool:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

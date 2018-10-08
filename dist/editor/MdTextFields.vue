@@ -3,7 +3,7 @@
     name: 'md-text-fields',
 
     serverCacheKey: props => {
-      return `md-text-fields:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-text-fields:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

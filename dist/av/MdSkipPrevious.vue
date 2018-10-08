@@ -3,7 +3,7 @@
     name: 'md-skip-previous',
 
     serverCacheKey: props => {
-      return `md-skip-previous:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-skip-previous:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

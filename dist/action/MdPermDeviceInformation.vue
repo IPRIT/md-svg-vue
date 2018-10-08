@@ -3,7 +3,7 @@
     name: 'md-perm-device-information',
 
     serverCacheKey: props => {
-      return `md-perm-device-information:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-perm-device-information:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

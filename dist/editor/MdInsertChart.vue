@@ -3,7 +3,7 @@
     name: 'md-insert-chart',
 
     serverCacheKey: props => {
-      return `md-insert-chart:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-insert-chart:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

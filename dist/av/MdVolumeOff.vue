@@ -3,7 +3,7 @@
     name: 'md-volume-off',
 
     serverCacheKey: props => {
-      return `md-volume-off:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-volume-off:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

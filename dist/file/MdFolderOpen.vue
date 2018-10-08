@@ -3,7 +3,7 @@
     name: 'md-folder-open',
 
     serverCacheKey: props => {
-      return `md-folder-open:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-folder-open:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

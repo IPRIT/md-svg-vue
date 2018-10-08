@@ -3,7 +3,7 @@
     name: 'md-motorcycle',
 
     serverCacheKey: props => {
-      return `md-motorcycle:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-motorcycle:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

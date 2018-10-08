@@ -3,7 +3,7 @@
     name: 'md-settings-input-svideo',
 
     serverCacheKey: props => {
-      return `md-settings-input-svideo:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-settings-input-svideo:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

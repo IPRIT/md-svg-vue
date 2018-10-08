@@ -3,7 +3,7 @@
     name: 'md-surround-sound',
 
     serverCacheKey: props => {
-      return `md-surround-sound:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-surround-sound:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

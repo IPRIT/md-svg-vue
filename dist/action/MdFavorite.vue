@@ -3,7 +3,7 @@
     name: 'md-favorite',
 
     serverCacheKey: props => {
-      return `md-favorite:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-favorite:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

@@ -3,7 +3,7 @@
     name: 'md-add-circle-outline',
 
     serverCacheKey: props => {
-      return `md-add-circle-outline:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-add-circle-outline:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

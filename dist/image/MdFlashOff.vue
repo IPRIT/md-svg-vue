@@ -3,7 +3,7 @@
     name: 'md-flash-off',
 
     serverCacheKey: props => {
-      return `md-flash-off:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-flash-off:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

@@ -3,7 +3,7 @@
     name: 'md-event-available',
 
     serverCacheKey: props => {
-      return `md-event-available:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-event-available:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

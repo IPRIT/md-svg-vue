@@ -3,7 +3,7 @@
     name: 'md-view-headline',
 
     serverCacheKey: props => {
-      return `md-view-headline:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-view-headline:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

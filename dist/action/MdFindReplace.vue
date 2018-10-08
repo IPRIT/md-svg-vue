@@ -3,7 +3,7 @@
     name: 'md-find-replace',
 
     serverCacheKey: props => {
-      return `md-find-replace:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-find-replace:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

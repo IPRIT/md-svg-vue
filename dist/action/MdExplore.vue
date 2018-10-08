@@ -3,7 +3,7 @@
     name: 'md-explore',
 
     serverCacheKey: props => {
-      return `md-explore:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-explore:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

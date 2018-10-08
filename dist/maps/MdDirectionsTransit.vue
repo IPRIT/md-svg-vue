@@ -3,7 +3,7 @@
     name: 'md-directions-transit',
 
     serverCacheKey: props => {
-      return `md-directions-transit:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-directions-transit:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

@@ -3,7 +3,7 @@
     name: 'md-call-merge',
 
     serverCacheKey: props => {
-      return `md-call-merge:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-call-merge:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

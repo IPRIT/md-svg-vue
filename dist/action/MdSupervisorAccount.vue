@@ -3,7 +3,7 @@
     name: 'md-supervisor-account',
 
     serverCacheKey: props => {
-      return `md-supervisor-account:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-supervisor-account:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

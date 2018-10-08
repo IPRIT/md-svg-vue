@@ -3,7 +3,7 @@
     name: 'md-pageview',
 
     serverCacheKey: props => {
-      return `md-pageview:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-pageview:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

@@ -3,7 +3,7 @@
     name: 'md-screen-share',
 
     serverCacheKey: props => {
-      return `md-screen-share:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-screen-share:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

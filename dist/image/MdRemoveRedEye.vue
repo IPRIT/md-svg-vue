@@ -3,7 +3,7 @@
     name: 'md-remove-red-eye',
 
     serverCacheKey: props => {
-      return `md-remove-red-eye:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-remove-red-eye:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

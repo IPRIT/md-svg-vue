@@ -3,7 +3,7 @@
     name: 'md-format-list-numbered',
 
     serverCacheKey: props => {
-      return `md-format-list-numbered:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-format-list-numbered:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

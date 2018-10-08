@@ -3,7 +3,7 @@
     name: 'md-donut-small',
 
     serverCacheKey: props => {
-      return `md-donut-small:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-donut-small:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

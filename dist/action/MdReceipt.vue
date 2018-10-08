@@ -3,7 +3,7 @@
     name: 'md-receipt',
 
     serverCacheKey: props => {
-      return `md-receipt:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-receipt:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

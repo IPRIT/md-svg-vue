@@ -3,7 +3,7 @@
     name: 'md-call-missed-outgoing',
 
     serverCacheKey: props => {
-      return `md-call-missed-outgoing:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-call-missed-outgoing:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

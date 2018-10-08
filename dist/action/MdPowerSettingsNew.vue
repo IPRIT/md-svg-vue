@@ -3,7 +3,7 @@
     name: 'md-power-settings-new',
 
     serverCacheKey: props => {
-      return `md-power-settings-new:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-power-settings-new:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

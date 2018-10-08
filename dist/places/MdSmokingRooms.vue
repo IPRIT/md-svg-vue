@@ -3,7 +3,7 @@
     name: 'md-smoking-rooms',
 
     serverCacheKey: props => {
-      return `md-smoking-rooms:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-smoking-rooms:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

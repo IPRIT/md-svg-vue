@@ -3,7 +3,7 @@
     name: 'md-print',
 
     serverCacheKey: props => {
-      return `md-print:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-print:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

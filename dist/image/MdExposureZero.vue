@@ -3,7 +3,7 @@
     name: 'md-exposure-zero',
 
     serverCacheKey: props => {
-      return `md-exposure-zero:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-exposure-zero:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

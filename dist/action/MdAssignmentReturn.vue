@@ -3,7 +3,7 @@
     name: 'md-assignment-return',
 
     serverCacheKey: props => {
-      return `md-assignment-return:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-assignment-return:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

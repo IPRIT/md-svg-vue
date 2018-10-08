@@ -3,7 +3,7 @@
     name: 'md-no-encryption',
 
     serverCacheKey: props => {
-      return `md-no-encryption:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-no-encryption:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

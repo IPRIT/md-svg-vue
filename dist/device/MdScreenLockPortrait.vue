@@ -3,7 +3,7 @@
     name: 'md-screen-lock-portrait',
 
     serverCacheKey: props => {
-      return `md-screen-lock-portrait:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-screen-lock-portrait:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

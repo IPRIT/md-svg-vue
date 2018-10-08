@@ -3,7 +3,7 @@
     name: 'md-grade',
 
     serverCacheKey: props => {
-      return `md-grade:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-grade:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

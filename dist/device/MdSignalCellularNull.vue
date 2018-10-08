@@ -3,7 +3,7 @@
     name: 'md-signal-cellular-null',
 
     serverCacheKey: props => {
-      return `md-signal-cellular-null:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-signal-cellular-null:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

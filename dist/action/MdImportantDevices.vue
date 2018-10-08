@@ -3,7 +3,7 @@
     name: 'md-important-devices',
 
     serverCacheKey: props => {
-      return `md-important-devices:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-important-devices:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

@@ -3,7 +3,7 @@
     name: 'md-gradient',
 
     serverCacheKey: props => {
-      return `md-gradient:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-gradient:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

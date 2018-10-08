@@ -3,7 +3,7 @@
     name: 'md-center-focus-strong',
 
     serverCacheKey: props => {
-      return `md-center-focus-strong:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-center-focus-strong:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

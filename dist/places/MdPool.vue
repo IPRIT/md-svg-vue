@@ -3,7 +3,7 @@
     name: 'md-pool',
 
     serverCacheKey: props => {
-      return `md-pool:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-pool:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

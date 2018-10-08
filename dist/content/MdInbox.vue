@@ -3,7 +3,7 @@
     name: 'md-inbox',
 
     serverCacheKey: props => {
-      return `md-inbox:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-inbox:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

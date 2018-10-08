@@ -3,7 +3,7 @@
     name: 'md-map',
 
     serverCacheKey: props => {
-      return `md-map:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-map:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

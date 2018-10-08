@@ -3,7 +3,7 @@
     name: 'md-book',
 
     serverCacheKey: props => {
-      return `md-book:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-book:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

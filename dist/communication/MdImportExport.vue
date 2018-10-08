@@ -3,7 +3,7 @@
     name: 'md-import-export',
 
     serverCacheKey: props => {
-      return `md-import-export:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-import-export:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

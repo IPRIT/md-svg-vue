@@ -3,7 +3,7 @@
     name: 'md-zoom-in',
 
     serverCacheKey: props => {
-      return `md-zoom-in:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-zoom-in:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

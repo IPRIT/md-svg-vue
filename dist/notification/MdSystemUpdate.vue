@@ -3,7 +3,7 @@
     name: 'md-system-update',
 
     serverCacheKey: props => {
-      return `md-system-update:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-system-update:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

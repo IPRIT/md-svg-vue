@@ -3,7 +3,7 @@
     name: 'md-delete-forever',
 
     serverCacheKey: props => {
-      return `md-delete-forever:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-delete-forever:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

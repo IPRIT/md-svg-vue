@@ -3,7 +3,7 @@
     name: 'md-format-align-justify',
 
     serverCacheKey: props => {
-      return `md-format-align-justify:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-format-align-justify:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

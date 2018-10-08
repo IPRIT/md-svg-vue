@@ -3,7 +3,7 @@
     name: 'md-gif',
 
     serverCacheKey: props => {
-      return `md-gif:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-gif:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

@@ -3,7 +3,7 @@
     name: 'md-keyboard-arrow-left',
 
     serverCacheKey: props => {
-      return `md-keyboard-arrow-left:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-keyboard-arrow-left:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

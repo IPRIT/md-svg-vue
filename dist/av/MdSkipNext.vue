@@ -3,7 +3,7 @@
     name: 'md-skip-next',
 
     serverCacheKey: props => {
-      return `md-skip-next:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-skip-next:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

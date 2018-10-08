@@ -3,7 +3,7 @@
     name: 'md-colorize',
 
     serverCacheKey: props => {
-      return `md-colorize:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-colorize:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

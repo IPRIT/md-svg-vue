@@ -3,7 +3,7 @@
     name: 'md-mode-edit',
 
     serverCacheKey: props => {
-      return `md-mode-edit:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-mode-edit:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

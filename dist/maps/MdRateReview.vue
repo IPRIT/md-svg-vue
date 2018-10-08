@@ -3,7 +3,7 @@
     name: 'md-rate-review',
 
     serverCacheKey: props => {
-      return `md-rate-review:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-rate-review:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

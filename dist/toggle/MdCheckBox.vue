@@ -3,7 +3,7 @@
     name: 'md-check-box',
 
     serverCacheKey: props => {
-      return `md-check-box:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-check-box:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

@@ -3,7 +3,7 @@
     name: 'md-local-play',
 
     serverCacheKey: props => {
-      return `md-local-play:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-local-play:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

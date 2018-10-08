@@ -3,7 +3,7 @@
     name: 'md-signal-wifi-0-bar',
 
     serverCacheKey: props => {
-      return `md-signal-wifi-0-bar:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-signal-wifi-0-bar:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

@@ -3,7 +3,7 @@
     name: 'md-remove-circle-outline',
 
     serverCacheKey: props => {
-      return `md-remove-circle-outline:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-remove-circle-outline:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

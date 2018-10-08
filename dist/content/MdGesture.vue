@@ -3,7 +3,7 @@
     name: 'md-gesture',
 
     serverCacheKey: props => {
-      return `md-gesture:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-gesture:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

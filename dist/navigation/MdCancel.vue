@@ -3,7 +3,7 @@
     name: 'md-cancel',
 
     serverCacheKey: props => {
-      return `md-cancel:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-cancel:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

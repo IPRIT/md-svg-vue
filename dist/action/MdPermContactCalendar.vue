@@ -3,7 +3,7 @@
     name: 'md-perm-contact-calendar',
 
     serverCacheKey: props => {
-      return `md-perm-contact-calendar:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-perm-contact-calendar:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

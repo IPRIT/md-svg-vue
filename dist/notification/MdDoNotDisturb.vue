@@ -3,7 +3,7 @@
     name: 'md-do-not-disturb',
 
     serverCacheKey: props => {
-      return `md-do-not-disturb:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-do-not-disturb:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

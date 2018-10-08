@@ -3,7 +3,7 @@
     name: 'md-camera-enhance',
 
     serverCacheKey: props => {
-      return `md-camera-enhance:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-camera-enhance:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

@@ -3,7 +3,7 @@
     name: 'md-sd-card',
 
     serverCacheKey: props => {
-      return `md-sd-card:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-sd-card:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

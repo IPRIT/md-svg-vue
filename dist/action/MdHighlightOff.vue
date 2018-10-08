@@ -3,7 +3,7 @@
     name: 'md-highlight-off',
 
     serverCacheKey: props => {
-      return `md-highlight-off:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-highlight-off:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

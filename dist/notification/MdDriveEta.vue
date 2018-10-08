@@ -3,7 +3,7 @@
     name: 'md-drive-eta',
 
     serverCacheKey: props => {
-      return `md-drive-eta:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-drive-eta:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

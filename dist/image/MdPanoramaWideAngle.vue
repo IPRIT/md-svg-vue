@@ -3,7 +3,7 @@
     name: 'md-panorama-wide-angle',
 
     serverCacheKey: props => {
-      return `md-panorama-wide-angle:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-panorama-wide-angle:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

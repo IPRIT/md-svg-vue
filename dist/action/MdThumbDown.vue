@@ -3,7 +3,7 @@
     name: 'md-thumb-down',
 
     serverCacheKey: props => {
-      return `md-thumb-down:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-thumb-down:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

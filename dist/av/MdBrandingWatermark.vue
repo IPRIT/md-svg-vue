@@ -3,7 +3,7 @@
     name: 'md-branding-watermark',
 
     serverCacheKey: props => {
-      return `md-branding-watermark:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-branding-watermark:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

@@ -3,7 +3,7 @@
     name: 'md-dashboard',
 
     serverCacheKey: props => {
-      return `md-dashboard:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-dashboard:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

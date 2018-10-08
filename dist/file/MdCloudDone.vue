@@ -3,7 +3,7 @@
     name: 'md-cloud-done',
 
     serverCacheKey: props => {
-      return `md-cloud-done:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-cloud-done:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

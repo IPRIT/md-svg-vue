@@ -3,7 +3,7 @@
     name: 'md-grid-on',
 
     serverCacheKey: props => {
-      return `md-grid-on:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-grid-on:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

@@ -3,7 +3,7 @@
     name: 'md-star-half',
 
     serverCacheKey: props => {
-      return `md-star-half:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-star-half:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

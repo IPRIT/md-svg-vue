@@ -3,7 +3,7 @@
     name: 'md-assistant-photo',
 
     serverCacheKey: props => {
-      return `md-assistant-photo:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-assistant-photo:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

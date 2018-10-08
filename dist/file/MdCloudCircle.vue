@@ -3,7 +3,7 @@
     name: 'md-cloud-circle',
 
     serverCacheKey: props => {
-      return `md-cloud-circle:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-cloud-circle:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

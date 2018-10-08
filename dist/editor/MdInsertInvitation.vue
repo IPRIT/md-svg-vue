@@ -3,7 +3,7 @@
     name: 'md-insert-invitation',
 
     serverCacheKey: props => {
-      return `md-insert-invitation:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-insert-invitation:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

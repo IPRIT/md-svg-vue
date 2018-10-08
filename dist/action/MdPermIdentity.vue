@@ -3,7 +3,7 @@
     name: 'md-perm-identity',
 
     serverCacheKey: props => {
-      return `md-perm-identity:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-perm-identity:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

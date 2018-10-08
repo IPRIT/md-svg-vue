@@ -3,7 +3,7 @@
     name: 'md-stop',
 
     serverCacheKey: props => {
-      return `md-stop:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-stop:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

@@ -3,7 +3,7 @@
     name: 'md-airline-seat-individual-suite',
 
     serverCacheKey: props => {
-      return `md-airline-seat-individual-suite:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-airline-seat-individual-suite:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

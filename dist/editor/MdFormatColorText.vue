@@ -3,7 +3,7 @@
     name: 'md-format-color-text',
 
     serverCacheKey: props => {
-      return `md-format-color-text:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-format-color-text:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

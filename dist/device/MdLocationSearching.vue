@@ -3,7 +3,7 @@
     name: 'md-location-searching',
 
     serverCacheKey: props => {
-      return `md-location-searching:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-location-searching:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

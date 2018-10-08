@@ -3,7 +3,7 @@
     name: 'md-assessment',
 
     serverCacheKey: props => {
-      return `md-assessment:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-assessment:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

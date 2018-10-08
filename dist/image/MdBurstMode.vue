@@ -3,7 +3,7 @@
     name: 'md-burst-mode',
 
     serverCacheKey: props => {
-      return `md-burst-mode:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-burst-mode:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

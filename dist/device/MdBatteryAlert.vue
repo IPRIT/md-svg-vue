@@ -3,7 +3,7 @@
     name: 'md-battery-alert',
 
     serverCacheKey: props => {
-      return `md-battery-alert:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-battery-alert:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

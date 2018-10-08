@@ -3,7 +3,7 @@
     name: 'md-disc-full',
 
     serverCacheKey: props => {
-      return `md-disc-full:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-disc-full:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

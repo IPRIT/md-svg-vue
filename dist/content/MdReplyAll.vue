@@ -3,7 +3,7 @@
     name: 'md-reply-all',
 
     serverCacheKey: props => {
-      return `md-reply-all:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-reply-all:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

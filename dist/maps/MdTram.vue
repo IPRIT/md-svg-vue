@@ -3,7 +3,7 @@
     name: 'md-tram',
 
     serverCacheKey: props => {
-      return `md-tram:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-tram:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

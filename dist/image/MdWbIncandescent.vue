@@ -3,7 +3,7 @@
     name: 'md-wb-incandescent',
 
     serverCacheKey: props => {
-      return `md-wb-incandescent:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-wb-incandescent:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

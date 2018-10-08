@@ -3,7 +3,7 @@
     name: 'md-open-in-new',
 
     serverCacheKey: props => {
-      return `md-open-in-new:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-open-in-new:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

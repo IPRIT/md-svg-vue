@@ -3,7 +3,7 @@
     name: 'md-font-download',
 
     serverCacheKey: props => {
-      return `md-font-download:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-font-download:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

@@ -3,7 +3,7 @@
     name: 'md-next-week',
 
     serverCacheKey: props => {
-      return `md-next-week:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-next-week:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

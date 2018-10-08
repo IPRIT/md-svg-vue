@@ -3,7 +3,7 @@
     name: 'md-arrow-back',
 
     serverCacheKey: props => {
-      return `md-arrow-back:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-arrow-back:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

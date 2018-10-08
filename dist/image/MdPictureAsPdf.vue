@@ -3,7 +3,7 @@
     name: 'md-picture-as-pdf',
 
     serverCacheKey: props => {
-      return `md-picture-as-pdf:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-picture-as-pdf:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

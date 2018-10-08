@@ -3,7 +3,7 @@
     name: 'md-pause-circle-filled',
 
     serverCacheKey: props => {
-      return `md-pause-circle-filled:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-pause-circle-filled:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

@@ -3,7 +3,7 @@
     name: 'md-add-alarm',
 
     serverCacheKey: props => {
-      return `md-add-alarm:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-add-alarm:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

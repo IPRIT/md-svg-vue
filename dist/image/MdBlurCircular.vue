@@ -3,7 +3,7 @@
     name: 'md-blur-circular',
 
     serverCacheKey: props => {
-      return `md-blur-circular:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-blur-circular:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

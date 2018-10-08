@@ -3,7 +3,7 @@
     name: 'md-local-phone',
 
     serverCacheKey: props => {
-      return `md-local-phone:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-local-phone:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

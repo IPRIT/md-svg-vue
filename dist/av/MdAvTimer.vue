@@ -3,7 +3,7 @@
     name: 'md-av-timer',
 
     serverCacheKey: props => {
-      return `md-av-timer:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-av-timer:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

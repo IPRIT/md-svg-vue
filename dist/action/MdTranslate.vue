@@ -3,7 +3,7 @@
     name: 'md-translate',
 
     serverCacheKey: props => {
-      return `md-translate:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-translate:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

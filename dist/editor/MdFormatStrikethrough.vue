@@ -3,7 +3,7 @@
     name: 'md-format-strikethrough',
 
     serverCacheKey: props => {
-      return `md-format-strikethrough:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-format-strikethrough:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

@@ -3,7 +3,7 @@
     name: 'md-videogame-asset',
 
     serverCacheKey: props => {
-      return `md-videogame-asset:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-videogame-asset:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

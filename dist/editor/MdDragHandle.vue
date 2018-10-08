@@ -3,7 +3,7 @@
     name: 'md-drag-handle',
 
     serverCacheKey: props => {
-      return `md-drag-handle:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-drag-handle:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

@@ -3,7 +3,7 @@
     name: 'md-format-list-bulleted',
 
     serverCacheKey: props => {
-      return `md-format-list-bulleted:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-format-list-bulleted:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

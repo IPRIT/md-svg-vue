@@ -3,7 +3,7 @@
     name: 'md-mic-off',
 
     serverCacheKey: props => {
-      return `md-mic-off:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-mic-off:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

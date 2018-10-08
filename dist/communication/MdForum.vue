@@ -3,7 +3,7 @@
     name: 'md-forum',
 
     serverCacheKey: props => {
-      return `md-forum:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-forum:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

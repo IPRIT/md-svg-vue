@@ -3,7 +3,7 @@
     name: 'md-forward-10',
 
     serverCacheKey: props => {
-      return `md-forward-10:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-forward-10:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

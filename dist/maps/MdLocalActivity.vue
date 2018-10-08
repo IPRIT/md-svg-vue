@@ -3,7 +3,7 @@
     name: 'md-local-activity',
 
     serverCacheKey: props => {
-      return `md-local-activity:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-local-activity:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

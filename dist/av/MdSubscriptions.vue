@@ -3,7 +3,7 @@
     name: 'md-subscriptions',
 
     serverCacheKey: props => {
-      return `md-subscriptions:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-subscriptions:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

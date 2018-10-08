@@ -3,7 +3,7 @@
     name: 'md-format-textdirection-r-to-l',
 
     serverCacheKey: props => {
-      return `md-format-textdirection-r-to-l:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-format-textdirection-r-to-l:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

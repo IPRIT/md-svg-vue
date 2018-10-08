@@ -3,7 +3,7 @@
     name: 'md-space-bar',
 
     serverCacheKey: props => {
-      return `md-space-bar:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-space-bar:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

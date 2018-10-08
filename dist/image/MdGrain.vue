@@ -3,7 +3,7 @@
     name: 'md-grain',
 
     serverCacheKey: props => {
-      return `md-grain:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-grain:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

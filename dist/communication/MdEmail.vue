@@ -3,7 +3,7 @@
     name: 'md-email',
 
     serverCacheKey: props => {
-      return `md-email:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-email:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

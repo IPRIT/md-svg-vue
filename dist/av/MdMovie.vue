@@ -3,7 +3,7 @@
     name: 'md-movie',
 
     serverCacheKey: props => {
-      return `md-movie:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-movie:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

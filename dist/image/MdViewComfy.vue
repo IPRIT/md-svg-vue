@@ -3,7 +3,7 @@
     name: 'md-view-comfy',
 
     serverCacheKey: props => {
-      return `md-view-comfy:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-view-comfy:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

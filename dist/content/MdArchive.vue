@@ -3,7 +3,7 @@
     name: 'md-archive',
 
     serverCacheKey: props => {
-      return `md-archive:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-archive:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

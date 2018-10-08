@@ -3,7 +3,7 @@
     name: 'md-voicemail',
 
     serverCacheKey: props => {
-      return `md-voicemail:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-voicemail:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

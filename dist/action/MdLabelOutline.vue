@@ -3,7 +3,7 @@
     name: 'md-label-outline',
 
     serverCacheKey: props => {
-      return `md-label-outline:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-label-outline:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

@@ -3,7 +3,7 @@
     name: 'md-lens',
 
     serverCacheKey: props => {
-      return `md-lens:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-lens:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

@@ -3,7 +3,7 @@
     name: 'md-format-underlined',
 
     serverCacheKey: props => {
-      return `md-format-underlined:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-format-underlined:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

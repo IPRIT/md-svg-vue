@@ -3,7 +3,7 @@
     name: 'md-widgets',
 
     serverCacheKey: props => {
-      return `md-widgets:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-widgets:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

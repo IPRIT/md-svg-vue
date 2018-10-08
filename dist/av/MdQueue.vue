@@ -3,7 +3,7 @@
     name: 'md-queue',
 
     serverCacheKey: props => {
-      return `md-queue:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-queue:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

@@ -3,7 +3,7 @@
     name: 'md-loupe',
 
     serverCacheKey: props => {
-      return `md-loupe:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-loupe:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

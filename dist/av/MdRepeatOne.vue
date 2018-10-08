@@ -3,7 +3,7 @@
     name: 'md-repeat-one',
 
     serverCacheKey: props => {
-      return `md-repeat-one:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-repeat-one:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

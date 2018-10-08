@@ -3,7 +3,7 @@
     name: 'md-access-alarms',
 
     serverCacheKey: props => {
-      return `md-access-alarms:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-access-alarms:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

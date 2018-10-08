@@ -3,7 +3,7 @@
     name: 'md-slideshow',
 
     serverCacheKey: props => {
-      return `md-slideshow:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-slideshow:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

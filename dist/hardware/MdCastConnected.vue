@@ -3,7 +3,7 @@
     name: 'md-cast-connected',
 
     serverCacheKey: props => {
-      return `md-cast-connected:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-cast-connected:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

@@ -3,7 +3,7 @@
     name: 'md-library-add',
 
     serverCacheKey: props => {
-      return `md-library-add:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-library-add:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

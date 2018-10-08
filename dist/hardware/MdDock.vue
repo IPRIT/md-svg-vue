@@ -3,7 +3,7 @@
     name: 'md-dock',
 
     serverCacheKey: props => {
-      return `md-dock:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-dock:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

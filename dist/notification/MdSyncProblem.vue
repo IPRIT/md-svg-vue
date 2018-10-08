@@ -3,7 +3,7 @@
     name: 'md-sync-problem',
 
     serverCacheKey: props => {
-      return `md-sync-problem:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-sync-problem:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

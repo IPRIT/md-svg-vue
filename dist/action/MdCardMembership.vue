@@ -3,7 +3,7 @@
     name: 'md-card-membership',
 
     serverCacheKey: props => {
-      return `md-card-membership:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-card-membership:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

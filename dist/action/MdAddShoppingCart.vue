@@ -3,7 +3,7 @@
     name: 'md-add-shopping-cart',
 
     serverCacheKey: props => {
-      return `md-add-shopping-cart:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-add-shopping-cart:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

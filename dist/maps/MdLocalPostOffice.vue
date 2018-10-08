@@ -3,7 +3,7 @@
     name: 'md-local-post-office',
 
     serverCacheKey: props => {
-      return `md-local-post-office:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-local-post-office:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

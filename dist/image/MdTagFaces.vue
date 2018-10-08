@@ -3,7 +3,7 @@
     name: 'md-tag-faces',
 
     serverCacheKey: props => {
-      return `md-tag-faces:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-tag-faces:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

@@ -3,7 +3,7 @@
     name: 'md-picture-in-picture-alt',
 
     serverCacheKey: props => {
-      return `md-picture-in-picture-alt:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-picture-in-picture-alt:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

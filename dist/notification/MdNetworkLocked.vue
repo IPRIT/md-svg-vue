@@ -3,7 +3,7 @@
     name: 'md-network-locked',
 
     serverCacheKey: props => {
-      return `md-network-locked:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-network-locked:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

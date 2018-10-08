@@ -3,7 +3,7 @@
     name: 'md-party-mode',
 
     serverCacheKey: props => {
-      return `md-party-mode:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-party-mode:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

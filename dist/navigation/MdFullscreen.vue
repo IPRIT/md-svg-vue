@@ -3,7 +3,7 @@
     name: 'md-fullscreen',
 
     serverCacheKey: props => {
-      return `md-fullscreen:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-fullscreen:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

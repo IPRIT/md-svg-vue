@@ -3,7 +3,7 @@
     name: 'md-backup',
 
     serverCacheKey: props => {
-      return `md-backup:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-backup:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

@@ -3,7 +3,7 @@
     name: 'md-desktop-mac',
 
     serverCacheKey: props => {
-      return `md-desktop-mac:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-desktop-mac:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

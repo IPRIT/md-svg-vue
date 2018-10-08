@@ -3,7 +3,7 @@
     name: 'md-fitness-center',
 
     serverCacheKey: props => {
-      return `md-fitness-center:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-fitness-center:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

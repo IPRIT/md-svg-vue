@@ -3,7 +3,7 @@
     name: 'md-photo-camera',
 
     serverCacheKey: props => {
-      return `md-photo-camera:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-photo-camera:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

@@ -3,7 +3,7 @@
     name: 'md-settings-cell',
 
     serverCacheKey: props => {
-      return `md-settings-cell:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-settings-cell:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

@@ -3,7 +3,7 @@
     name: 'md-location-disabled',
 
     serverCacheKey: props => {
-      return `md-location-disabled:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-location-disabled:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

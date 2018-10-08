@@ -3,7 +3,7 @@
     name: 'md-computer',
 
     serverCacheKey: props => {
-      return `md-computer:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-computer:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

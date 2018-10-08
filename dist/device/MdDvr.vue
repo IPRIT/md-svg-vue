@@ -3,7 +3,7 @@
     name: 'md-dvr',
 
     serverCacheKey: props => {
-      return `md-dvr:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-dvr:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

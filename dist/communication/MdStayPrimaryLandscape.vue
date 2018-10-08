@@ -3,7 +3,7 @@
     name: 'md-stay-primary-landscape',
 
     serverCacheKey: props => {
-      return `md-stay-primary-landscape:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-stay-primary-landscape:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

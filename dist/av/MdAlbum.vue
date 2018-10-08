@@ -3,7 +3,7 @@
     name: 'md-album',
 
     serverCacheKey: props => {
-      return `md-album:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-album:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

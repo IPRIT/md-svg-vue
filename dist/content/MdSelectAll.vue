@@ -3,7 +3,7 @@
     name: 'md-select-all',
 
     serverCacheKey: props => {
-      return `md-select-all:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-select-all:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

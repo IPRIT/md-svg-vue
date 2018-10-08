@@ -3,7 +3,7 @@
     name: 'md-arrow-drop-down-circle',
 
     serverCacheKey: props => {
-      return `md-arrow-drop-down-circle:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-arrow-drop-down-circle:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

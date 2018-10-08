@@ -3,7 +3,7 @@
     name: 'md-explicit',
 
     serverCacheKey: props => {
-      return `md-explicit:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-explicit:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

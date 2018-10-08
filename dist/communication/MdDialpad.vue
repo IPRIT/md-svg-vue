@@ -3,7 +3,7 @@
     name: 'md-dialpad',
 
     serverCacheKey: props => {
-      return `md-dialpad:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-dialpad:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

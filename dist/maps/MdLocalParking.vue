@@ -3,7 +3,7 @@
     name: 'md-local-parking',
 
     serverCacheKey: props => {
-      return `md-local-parking:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-local-parking:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

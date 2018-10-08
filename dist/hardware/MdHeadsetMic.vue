@@ -3,7 +3,7 @@
     name: 'md-headset-mic',
 
     serverCacheKey: props => {
-      return `md-headset-mic:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-headset-mic:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

@@ -3,7 +3,7 @@
     name: 'md-sim-card',
 
     serverCacheKey: props => {
-      return `md-sim-card:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-sim-card:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

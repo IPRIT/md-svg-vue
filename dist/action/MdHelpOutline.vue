@@ -3,7 +3,7 @@
     name: 'md-help-outline',
 
     serverCacheKey: props => {
-      return `md-help-outline:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-help-outline:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

@@ -3,7 +3,7 @@
     name: 'md-view-stream',
 
     serverCacheKey: props => {
-      return `md-view-stream:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-view-stream:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

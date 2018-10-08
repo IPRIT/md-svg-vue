@@ -3,7 +3,7 @@
     name: 'md-play-circle-filled',
 
     serverCacheKey: props => {
-      return `md-play-circle-filled:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-play-circle-filled:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

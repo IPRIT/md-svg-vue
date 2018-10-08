@@ -3,7 +3,7 @@
     name: 'md-all-out',
 
     serverCacheKey: props => {
-      return `md-all-out:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-all-out:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

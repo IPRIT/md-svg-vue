@@ -3,7 +3,7 @@
     name: 'md-border-bottom',
 
     serverCacheKey: props => {
-      return `md-border-bottom:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-border-bottom:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

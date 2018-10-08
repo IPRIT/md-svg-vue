@@ -3,7 +3,7 @@
     name: 'md-beach-access',
 
     serverCacheKey: props => {
-      return `md-beach-access:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-beach-access:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

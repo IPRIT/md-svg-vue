@@ -3,7 +3,7 @@
     name: 'md-network-check',
 
     serverCacheKey: props => {
-      return `md-network-check:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-network-check:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

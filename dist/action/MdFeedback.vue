@@ -3,7 +3,7 @@
     name: 'md-feedback',
 
     serverCacheKey: props => {
-      return `md-feedback:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-feedback:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

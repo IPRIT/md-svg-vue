@@ -3,7 +3,7 @@
     name: 'md-payment',
 
     serverCacheKey: props => {
-      return `md-payment:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-payment:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

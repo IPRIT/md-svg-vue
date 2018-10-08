@@ -3,7 +3,7 @@
     name: 'md-schedule',
 
     serverCacheKey: props => {
-      return `md-schedule:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-schedule:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

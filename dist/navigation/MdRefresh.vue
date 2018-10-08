@@ -3,7 +3,7 @@
     name: 'md-refresh',
 
     serverCacheKey: props => {
-      return `md-refresh:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-refresh:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

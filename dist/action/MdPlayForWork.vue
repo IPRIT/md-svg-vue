@@ -3,7 +3,7 @@
     name: 'md-play-for-work',
 
     serverCacheKey: props => {
-      return `md-play-for-work:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-play-for-work:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

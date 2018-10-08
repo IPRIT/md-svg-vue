@@ -3,7 +3,7 @@
     name: 'md-train',
 
     serverCacheKey: props => {
-      return `md-train:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-train:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

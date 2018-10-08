@@ -3,7 +3,7 @@
     name: 'md-control-point',
 
     serverCacheKey: props => {
-      return `md-control-point:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-control-point:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

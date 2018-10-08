@@ -3,7 +3,7 @@
     name: 'md-assistant',
 
     serverCacheKey: props => {
-      return `md-assistant:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-assistant:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

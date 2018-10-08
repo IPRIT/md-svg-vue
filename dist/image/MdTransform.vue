@@ -3,7 +3,7 @@
     name: 'md-transform',
 
     serverCacheKey: props => {
-      return `md-transform:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-transform:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

@@ -3,7 +3,7 @@
     name: 'md-power-input',
 
     serverCacheKey: props => {
-      return `md-power-input:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-power-input:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

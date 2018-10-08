@@ -3,7 +3,7 @@
     name: 'md-pie-chart-outlined',
 
     serverCacheKey: props => {
-      return `md-pie-chart-outlined:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-pie-chart-outlined:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

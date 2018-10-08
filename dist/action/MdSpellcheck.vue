@@ -3,7 +3,7 @@
     name: 'md-spellcheck',
 
     serverCacheKey: props => {
-      return `md-spellcheck:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-spellcheck:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

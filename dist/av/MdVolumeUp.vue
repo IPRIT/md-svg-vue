@@ -3,7 +3,7 @@
     name: 'md-volume-up',
 
     serverCacheKey: props => {
-      return `md-volume-up:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-volume-up:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

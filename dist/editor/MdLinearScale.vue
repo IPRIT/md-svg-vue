@@ -3,7 +3,7 @@
     name: 'md-linear-scale',
 
     serverCacheKey: props => {
-      return `md-linear-scale:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-linear-scale:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

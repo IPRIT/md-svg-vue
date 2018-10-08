@@ -3,7 +3,7 @@
     name: 'md-settings-input-antenna',
 
     serverCacheKey: props => {
-      return `md-settings-input-antenna:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-settings-input-antenna:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

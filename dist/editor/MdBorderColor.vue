@@ -3,7 +3,7 @@
     name: 'md-border-color',
 
     serverCacheKey: props => {
-      return `md-border-color:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-border-color:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

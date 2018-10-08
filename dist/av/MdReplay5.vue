@@ -3,7 +3,7 @@
     name: 'md-replay-5',
 
     serverCacheKey: props => {
-      return `md-replay-5:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-replay-5:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

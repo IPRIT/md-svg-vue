@@ -3,7 +3,7 @@
     name: 'md-file-upload',
 
     serverCacheKey: props => {
-      return `md-file-upload:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-file-upload:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

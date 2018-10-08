@@ -3,7 +3,7 @@
     name: 'md-question-answer',
 
     serverCacheKey: props => {
-      return `md-question-answer:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-question-answer:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

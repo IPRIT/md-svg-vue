@@ -3,7 +3,7 @@
     name: 'md-fiber-smart-record',
 
     serverCacheKey: props => {
-      return `md-fiber-smart-record:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-fiber-smart-record:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

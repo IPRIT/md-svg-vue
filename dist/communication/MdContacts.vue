@@ -3,7 +3,7 @@
     name: 'md-contacts',
 
     serverCacheKey: props => {
-      return `md-contacts:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-contacts:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

@@ -3,7 +3,7 @@
     name: 'md-ev-station',
 
     serverCacheKey: props => {
-      return `md-ev-station:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-ev-station:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

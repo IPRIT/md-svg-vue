@@ -3,7 +3,7 @@
     name: 'md-polymer',
 
     serverCacheKey: props => {
-      return `md-polymer:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-polymer:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

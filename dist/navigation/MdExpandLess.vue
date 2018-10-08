@@ -3,7 +3,7 @@
     name: 'md-expand-less',
 
     serverCacheKey: props => {
-      return `md-expand-less:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-expand-less:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

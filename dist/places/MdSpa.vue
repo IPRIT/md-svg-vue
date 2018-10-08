@@ -3,7 +3,7 @@
     name: 'md-spa',
 
     serverCacheKey: props => {
-      return `md-spa:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-spa:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

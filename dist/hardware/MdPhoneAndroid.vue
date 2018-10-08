@@ -3,7 +3,7 @@
     name: 'md-phone-android',
 
     serverCacheKey: props => {
-      return `md-phone-android:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-phone-android:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

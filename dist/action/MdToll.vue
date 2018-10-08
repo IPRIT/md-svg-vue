@@ -3,7 +3,7 @@
     name: 'md-toll',
 
     serverCacheKey: props => {
-      return `md-toll:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-toll:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

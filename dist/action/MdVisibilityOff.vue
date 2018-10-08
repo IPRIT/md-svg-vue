@@ -3,7 +3,7 @@
     name: 'md-visibility-off',
 
     serverCacheKey: props => {
-      return `md-visibility-off:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-visibility-off:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

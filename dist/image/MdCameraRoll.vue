@@ -3,7 +3,7 @@
     name: 'md-camera-roll',
 
     serverCacheKey: props => {
-      return `md-camera-roll:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-camera-roll:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

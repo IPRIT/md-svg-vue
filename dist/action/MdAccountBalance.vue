@@ -3,7 +3,7 @@
     name: 'md-account-balance',
 
     serverCacheKey: props => {
-      return `md-account-balance:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-account-balance:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

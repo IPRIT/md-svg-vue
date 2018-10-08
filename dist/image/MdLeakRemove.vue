@@ -3,7 +3,7 @@
     name: 'md-leak-remove',
 
     serverCacheKey: props => {
-      return `md-leak-remove:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-leak-remove:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

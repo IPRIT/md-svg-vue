@@ -3,7 +3,7 @@
     name: 'md-chevron-left',
 
     serverCacheKey: props => {
-      return `md-chevron-left:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-chevron-left:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

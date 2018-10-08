@@ -3,7 +3,7 @@
     name: 'md-wallpaper',
 
     serverCacheKey: props => {
-      return `md-wallpaper:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-wallpaper:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

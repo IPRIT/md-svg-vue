@@ -3,7 +3,7 @@
     name: 'md-shop',
 
     serverCacheKey: props => {
-      return `md-shop:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-shop:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

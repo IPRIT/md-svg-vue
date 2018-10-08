@@ -3,7 +3,7 @@
     name: 'md-assignment-ind',
 
     serverCacheKey: props => {
-      return `md-assignment-ind:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-assignment-ind:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

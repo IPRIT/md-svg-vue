@@ -3,7 +3,7 @@
     name: 'md-brightness-medium',
 
     serverCacheKey: props => {
-      return `md-brightness-medium:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-brightness-medium:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

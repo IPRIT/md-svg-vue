@@ -3,7 +3,7 @@
     name: 'md-view-day',
 
     serverCacheKey: props => {
-      return `md-view-day:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-view-day:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

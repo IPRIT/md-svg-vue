@@ -3,7 +3,7 @@
     name: 'md-subtitles',
 
     serverCacheKey: props => {
-      return `md-subtitles:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-subtitles:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

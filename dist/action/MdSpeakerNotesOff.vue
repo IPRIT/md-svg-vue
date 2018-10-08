@@ -3,7 +3,7 @@
     name: 'md-speaker-notes-off',
 
     serverCacheKey: props => {
-      return `md-speaker-notes-off:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-speaker-notes-off:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

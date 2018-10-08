@@ -3,7 +3,7 @@
     name: 'md-subdirectory-arrow-right',
 
     serverCacheKey: props => {
-      return `md-subdirectory-arrow-right:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-subdirectory-arrow-right:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

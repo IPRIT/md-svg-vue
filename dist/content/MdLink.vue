@@ -3,7 +3,7 @@
     name: 'md-link',
 
     serverCacheKey: props => {
-      return `md-link:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-link:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

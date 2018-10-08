@@ -3,7 +3,7 @@
     name: 'md-navigate-next',
 
     serverCacheKey: props => {
-      return `md-navigate-next:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-navigate-next:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

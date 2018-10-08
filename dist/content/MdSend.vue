@@ -3,7 +3,7 @@
     name: 'md-send',
 
     serverCacheKey: props => {
-      return `md-send:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-send:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

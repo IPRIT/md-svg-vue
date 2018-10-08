@@ -3,7 +3,7 @@
     name: 'md-phone-forwarded',
 
     serverCacheKey: props => {
-      return `md-phone-forwarded:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-phone-forwarded:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

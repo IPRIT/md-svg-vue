@@ -3,7 +3,7 @@
     name: 'md-phone-in-talk',
 
     serverCacheKey: props => {
-      return `md-phone-in-talk:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-phone-in-talk:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

@@ -3,7 +3,7 @@
     name: 'md-exit-to-app',
 
     serverCacheKey: props => {
-      return `md-exit-to-app:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-exit-to-app:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

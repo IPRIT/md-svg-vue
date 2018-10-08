@@ -3,7 +3,7 @@
     name: 'md-tablet-mac',
 
     serverCacheKey: props => {
-      return `md-tablet-mac:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-tablet-mac:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

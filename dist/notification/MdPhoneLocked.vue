@@ -3,7 +3,7 @@
     name: 'md-phone-locked',
 
     serverCacheKey: props => {
-      return `md-phone-locked:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-phone-locked:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

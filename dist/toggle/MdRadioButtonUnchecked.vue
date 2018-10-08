@@ -3,7 +3,7 @@
     name: 'md-radio-button-unchecked',
 
     serverCacheKey: props => {
-      return `md-radio-button-unchecked:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-radio-button-unchecked:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

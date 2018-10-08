@@ -3,7 +3,7 @@
     name: 'md-rounded-corner',
 
     serverCacheKey: props => {
-      return `md-rounded-corner:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-rounded-corner:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

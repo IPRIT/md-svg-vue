@@ -3,7 +3,7 @@
     name: 'md-view-quilt',
 
     serverCacheKey: props => {
-      return `md-view-quilt:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-view-quilt:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

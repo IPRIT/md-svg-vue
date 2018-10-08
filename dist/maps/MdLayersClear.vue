@@ -3,7 +3,7 @@
     name: 'md-layers-clear',
 
     serverCacheKey: props => {
-      return `md-layers-clear:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-layers-clear:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

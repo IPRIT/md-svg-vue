@@ -3,7 +3,7 @@
     name: 'md-phone-paused',
 
     serverCacheKey: props => {
-      return `md-phone-paused:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-phone-paused:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

@@ -3,7 +3,7 @@
     name: 'md-system-update-alt',
 
     serverCacheKey: props => {
-      return `md-system-update-alt:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-system-update-alt:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

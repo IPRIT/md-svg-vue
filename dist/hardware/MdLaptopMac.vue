@@ -3,7 +3,7 @@
     name: 'md-laptop-mac',
 
     serverCacheKey: props => {
-      return `md-laptop-mac:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-laptop-mac:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

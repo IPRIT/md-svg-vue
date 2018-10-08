@@ -3,7 +3,7 @@
     name: 'md-brightness-high',
 
     serverCacheKey: props => {
-      return `md-brightness-high:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-brightness-high:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

@@ -3,7 +3,7 @@
     name: 'md-track-changes',
 
     serverCacheKey: props => {
-      return `md-track-changes:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-track-changes:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

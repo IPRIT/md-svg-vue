@@ -3,7 +3,7 @@
     name: 'md-invert-colors',
 
     serverCacheKey: props => {
-      return `md-invert-colors:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-invert-colors:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

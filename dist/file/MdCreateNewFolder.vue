@@ -3,7 +3,7 @@
     name: 'md-create-new-folder',
 
     serverCacheKey: props => {
-      return `md-create-new-folder:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-create-new-folder:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

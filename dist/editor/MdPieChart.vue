@@ -3,7 +3,7 @@
     name: 'md-pie-chart',
 
     serverCacheKey: props => {
-      return `md-pie-chart:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-pie-chart:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

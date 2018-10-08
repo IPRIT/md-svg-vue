@@ -3,7 +3,7 @@
     name: 'md-timeline',
 
     serverCacheKey: props => {
-      return `md-timeline:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-timeline:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

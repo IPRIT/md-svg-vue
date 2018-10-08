@@ -3,7 +3,7 @@
     name: 'md-hourglass-full',
 
     serverCacheKey: props => {
-      return `md-hourglass-full:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-hourglass-full:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

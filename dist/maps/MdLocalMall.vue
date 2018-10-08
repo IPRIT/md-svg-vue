@@ -3,7 +3,7 @@
     name: 'md-local-mall',
 
     serverCacheKey: props => {
-      return `md-local-mall:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-local-mall:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

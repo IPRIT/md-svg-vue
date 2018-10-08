@@ -3,7 +3,7 @@
     name: 'md-vpn-lock',
 
     serverCacheKey: props => {
-      return `md-vpn-lock:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-vpn-lock:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

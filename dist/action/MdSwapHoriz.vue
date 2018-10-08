@@ -3,7 +3,7 @@
     name: 'md-swap-horiz',
 
     serverCacheKey: props => {
-      return `md-swap-horiz:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-swap-horiz:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

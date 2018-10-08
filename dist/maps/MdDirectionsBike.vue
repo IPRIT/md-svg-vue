@@ -3,7 +3,7 @@
     name: 'md-directions-bike',
 
     serverCacheKey: props => {
-      return `md-directions-bike:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-directions-bike:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

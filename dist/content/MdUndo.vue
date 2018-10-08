@@ -3,7 +3,7 @@
     name: 'md-undo',
 
     serverCacheKey: props => {
-      return `md-undo:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-undo:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

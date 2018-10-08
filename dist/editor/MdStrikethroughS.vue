@@ -3,7 +3,7 @@
     name: 'md-strikethrough-s',
 
     serverCacheKey: props => {
-      return `md-strikethrough-s:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-strikethrough-s:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

@@ -3,7 +3,7 @@
     name: 'md-report',
 
     serverCacheKey: props => {
-      return `md-report:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-report:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

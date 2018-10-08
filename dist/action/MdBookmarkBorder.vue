@@ -3,7 +3,7 @@
     name: 'md-bookmark-border',
 
     serverCacheKey: props => {
-      return `md-bookmark-border:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-bookmark-border:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

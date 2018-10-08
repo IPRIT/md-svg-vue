@@ -3,7 +3,7 @@
     name: 'md-queue-play-next',
 
     serverCacheKey: props => {
-      return `md-queue-play-next:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-queue-play-next:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

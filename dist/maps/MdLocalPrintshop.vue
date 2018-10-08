@@ -3,7 +3,7 @@
     name: 'md-local-printshop',
 
     serverCacheKey: props => {
-      return `md-local-printshop:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-local-printshop:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

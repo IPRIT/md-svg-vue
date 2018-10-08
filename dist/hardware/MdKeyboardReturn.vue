@@ -3,7 +3,7 @@
     name: 'md-keyboard-return',
 
     serverCacheKey: props => {
-      return `md-keyboard-return:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-keyboard-return:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

@@ -3,7 +3,7 @@
     name: 'md-business-center',
 
     serverCacheKey: props => {
-      return `md-business-center:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-business-center:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

@@ -3,7 +3,7 @@
     name: 'md-memory',
 
     serverCacheKey: props => {
-      return `md-memory:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-memory:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

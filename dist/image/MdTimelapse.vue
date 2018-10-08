@@ -3,7 +3,7 @@
     name: 'md-timelapse',
 
     serverCacheKey: props => {
-      return `md-timelapse:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-timelapse:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

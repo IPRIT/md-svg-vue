@@ -3,7 +3,7 @@
     name: 'md-games',
 
     serverCacheKey: props => {
-      return `md-games:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-games:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

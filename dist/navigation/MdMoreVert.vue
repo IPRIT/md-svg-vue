@@ -3,7 +3,7 @@
     name: 'md-more-vert',
 
     serverCacheKey: props => {
-      return `md-more-vert:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-more-vert:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

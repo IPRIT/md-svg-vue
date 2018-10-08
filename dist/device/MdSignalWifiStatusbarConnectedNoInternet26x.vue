@@ -3,7 +3,7 @@
     name: 'md-signal-wifi-statusbar-connected-no-internet-26-x',
 
     serverCacheKey: props => {
-      return `md-signal-wifi-statusbar-connected-no-internet-26-x:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-signal-wifi-statusbar-connected-no-internet-26-x:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

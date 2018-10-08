@@ -3,7 +3,7 @@
     name: 'md-lock-outline',
 
     serverCacheKey: props => {
-      return `md-lock-outline:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-lock-outline:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

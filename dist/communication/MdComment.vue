@@ -3,7 +3,7 @@
     name: 'md-comment',
 
     serverCacheKey: props => {
-      return `md-comment:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-comment:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

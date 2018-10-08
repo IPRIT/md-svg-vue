@@ -3,7 +3,7 @@
     name: 'md-filter-b-and-w',
 
     serverCacheKey: props => {
-      return `md-filter-b-and-w:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-filter-b-and-w:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

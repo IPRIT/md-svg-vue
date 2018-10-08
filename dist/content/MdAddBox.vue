@@ -3,7 +3,7 @@
     name: 'md-add-box',
 
     serverCacheKey: props => {
-      return `md-add-box:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-add-box:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

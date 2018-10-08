@@ -3,7 +3,7 @@
     name: 'md-no-sim',
 
     serverCacheKey: props => {
-      return `md-no-sim:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-no-sim:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

@@ -3,7 +3,7 @@
     name: 'md-perm-camera-mic',
 
     serverCacheKey: props => {
-      return `md-perm-camera-mic:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-perm-camera-mic:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

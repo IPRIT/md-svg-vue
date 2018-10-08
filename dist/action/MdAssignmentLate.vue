@@ -3,7 +3,7 @@
     name: 'md-assignment-late',
 
     serverCacheKey: props => {
-      return `md-assignment-late:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-assignment-late:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

@@ -3,7 +3,7 @@
     name: 'md-gavel',
 
     serverCacheKey: props => {
-      return `md-gavel:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-gavel:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

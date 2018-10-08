@@ -3,7 +3,7 @@
     name: 'md-swap-vert',
 
     serverCacheKey: props => {
-      return `md-swap-vert:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-swap-vert:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

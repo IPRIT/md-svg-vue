@@ -3,7 +3,7 @@
     name: 'md-local-convenience-store',
 
     serverCacheKey: props => {
-      return `md-local-convenience-store:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-local-convenience-store:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

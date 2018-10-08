@@ -3,7 +3,7 @@
     name: 'md-flash-auto',
 
     serverCacheKey: props => {
-      return `md-flash-auto:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-flash-auto:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

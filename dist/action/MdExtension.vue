@@ -3,7 +3,7 @@
     name: 'md-extension',
 
     serverCacheKey: props => {
-      return `md-extension:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-extension:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

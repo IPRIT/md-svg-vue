@@ -3,7 +3,7 @@
     name: 'md-brush',
 
     serverCacheKey: props => {
-      return `md-brush:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-brush:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

@@ -3,7 +3,7 @@
     name: 'md-loyalty',
 
     serverCacheKey: props => {
-      return `md-loyalty:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-loyalty:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

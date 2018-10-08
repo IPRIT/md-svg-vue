@@ -3,7 +3,7 @@
     name: 'md-check',
 
     serverCacheKey: props => {
-      return `md-check:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-check:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

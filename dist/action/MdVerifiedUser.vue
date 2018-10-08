@@ -3,7 +3,7 @@
     name: 'md-verified-user',
 
     serverCacheKey: props => {
-      return `md-verified-user:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-verified-user:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

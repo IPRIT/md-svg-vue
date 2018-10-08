@@ -3,7 +3,7 @@
     name: 'md-bookmark',
 
     serverCacheKey: props => {
-      return `md-bookmark:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-bookmark:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

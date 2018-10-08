@@ -3,7 +3,7 @@
     name: 'md-timer-10',
 
     serverCacheKey: props => {
-      return `md-timer-10:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-timer-10:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

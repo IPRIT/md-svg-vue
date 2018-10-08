@@ -3,7 +3,7 @@
     name: 'md-unfold-more',
 
     serverCacheKey: props => {
-      return `md-unfold-more:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-unfold-more:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

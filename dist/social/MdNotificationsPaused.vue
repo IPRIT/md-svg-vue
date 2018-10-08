@@ -3,7 +3,7 @@
     name: 'md-notifications-paused',
 
     serverCacheKey: props => {
-      return `md-notifications-paused:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-notifications-paused:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

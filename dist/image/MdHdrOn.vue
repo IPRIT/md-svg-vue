@@ -3,7 +3,7 @@
     name: 'md-hdr-on',
 
     serverCacheKey: props => {
-      return `md-hdr-on:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-hdr-on:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

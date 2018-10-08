@@ -3,7 +3,7 @@
     name: 'md-folder-shared',
 
     serverCacheKey: props => {
-      return `md-folder-shared:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-folder-shared:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

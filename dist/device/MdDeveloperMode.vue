@@ -3,7 +3,7 @@
     name: 'md-developer-mode',
 
     serverCacheKey: props => {
-      return `md-developer-mode:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-developer-mode:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

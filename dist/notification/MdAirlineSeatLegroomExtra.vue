@@ -3,7 +3,7 @@
     name: 'md-airline-seat-legroom-extra',
 
     serverCacheKey: props => {
-      return `md-airline-seat-legroom-extra:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-airline-seat-legroom-extra:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

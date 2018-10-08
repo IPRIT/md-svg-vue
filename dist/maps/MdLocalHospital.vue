@@ -3,7 +3,7 @@
     name: 'md-local-hospital',
 
     serverCacheKey: props => {
-      return `md-local-hospital:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-local-hospital:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

@@ -3,7 +3,7 @@
     name: 'md-directions-car',
 
     serverCacheKey: props => {
-      return `md-directions-car:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-directions-car:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

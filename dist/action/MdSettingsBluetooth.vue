@@ -3,7 +3,7 @@
     name: 'md-settings-bluetooth',
 
     serverCacheKey: props => {
-      return `md-settings-bluetooth:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-settings-bluetooth:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

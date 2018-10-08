@@ -3,7 +3,7 @@
     name: 'md-call-to-action',
 
     serverCacheKey: props => {
-      return `md-call-to-action:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-call-to-action:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

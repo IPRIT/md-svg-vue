@@ -3,7 +3,7 @@
     name: 'md-keyboard-arrow-down',
 
     serverCacheKey: props => {
-      return `md-keyboard-arrow-down:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-keyboard-arrow-down:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

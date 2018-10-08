@@ -3,7 +3,7 @@
     name: 'md-stay-current-landscape',
 
     serverCacheKey: props => {
-      return `md-stay-current-landscape:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-stay-current-landscape:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

@@ -3,7 +3,7 @@
     name: 'md-sentiment-very-satisfied',
 
     serverCacheKey: props => {
-      return `md-sentiment-very-satisfied:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-sentiment-very-satisfied:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

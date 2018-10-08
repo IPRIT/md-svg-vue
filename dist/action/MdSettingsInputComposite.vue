@@ -3,7 +3,7 @@
     name: 'md-settings-input-composite',
 
     serverCacheKey: props => {
-      return `md-settings-input-composite:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-settings-input-composite:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

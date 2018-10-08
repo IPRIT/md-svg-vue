@@ -3,7 +3,7 @@
     name: 'md-airline-seat-flat-angled',
 
     serverCacheKey: props => {
-      return `md-airline-seat-flat-angled:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-airline-seat-flat-angled:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

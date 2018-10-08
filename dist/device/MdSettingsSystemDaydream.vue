@@ -3,7 +3,7 @@
     name: 'md-settings-system-daydream',
 
     serverCacheKey: props => {
-      return `md-settings-system-daydream:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-settings-system-daydream:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

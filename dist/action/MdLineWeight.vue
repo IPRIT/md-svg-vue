@@ -3,7 +3,7 @@
     name: 'md-line-weight',
 
     serverCacheKey: props => {
-      return `md-line-weight:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-line-weight:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

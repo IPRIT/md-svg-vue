@@ -3,7 +3,7 @@
     name: 'md-tab',
 
     serverCacheKey: props => {
-      return `md-tab:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-tab:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

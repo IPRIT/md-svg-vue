@@ -3,7 +3,7 @@
     name: 'md-rowing',
 
     serverCacheKey: props => {
-      return `md-rowing:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-rowing:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

@@ -3,7 +3,7 @@
     name: 'md-border-inner',
 
     serverCacheKey: props => {
-      return `md-border-inner:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-border-inner:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

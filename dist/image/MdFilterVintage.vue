@@ -3,7 +3,7 @@
     name: 'md-filter-vintage',
 
     serverCacheKey: props => {
-      return `md-filter-vintage:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-filter-vintage:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

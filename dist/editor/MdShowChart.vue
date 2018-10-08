@@ -3,7 +3,7 @@
     name: 'md-show-chart',
 
     serverCacheKey: props => {
-      return `md-show-chart:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-show-chart:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

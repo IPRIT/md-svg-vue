@@ -3,7 +3,7 @@
     name: 'md-mic-none',
 
     serverCacheKey: props => {
-      return `md-mic-none:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-mic-none:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

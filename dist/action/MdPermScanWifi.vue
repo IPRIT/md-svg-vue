@@ -3,7 +3,7 @@
     name: 'md-perm-scan-wifi',
 
     serverCacheKey: props => {
-      return `md-perm-scan-wifi:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-perm-scan-wifi:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

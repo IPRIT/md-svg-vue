@@ -3,7 +3,7 @@
     name: 'md-navigate-before',
 
     serverCacheKey: props => {
-      return `md-navigate-before:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-navigate-before:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

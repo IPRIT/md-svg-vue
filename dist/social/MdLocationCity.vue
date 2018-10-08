@@ -3,7 +3,7 @@
     name: 'md-location-city',
 
     serverCacheKey: props => {
-      return `md-location-city:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-location-city:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

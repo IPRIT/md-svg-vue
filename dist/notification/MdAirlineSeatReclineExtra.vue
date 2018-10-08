@@ -3,7 +3,7 @@
     name: 'md-airline-seat-recline-extra',
 
     serverCacheKey: props => {
-      return `md-airline-seat-recline-extra:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-airline-seat-recline-extra:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

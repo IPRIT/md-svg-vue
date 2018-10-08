@@ -3,7 +3,7 @@
     name: 'md-pin-drop',
 
     serverCacheKey: props => {
-      return `md-pin-drop:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-pin-drop:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

@@ -3,7 +3,7 @@
     name: 'md-change-history',
 
     serverCacheKey: props => {
-      return `md-change-history:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-change-history:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

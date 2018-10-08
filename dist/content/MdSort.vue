@@ -3,7 +3,7 @@
     name: 'md-sort',
 
     serverCacheKey: props => {
-      return `md-sort:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-sort:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

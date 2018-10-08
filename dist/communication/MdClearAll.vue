@@ -3,7 +3,7 @@
     name: 'md-clear-all',
 
     serverCacheKey: props => {
-      return `md-clear-all:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-clear-all:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

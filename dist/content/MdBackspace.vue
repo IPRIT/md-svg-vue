@@ -3,7 +3,7 @@
     name: 'md-backspace',
 
     serverCacheKey: props => {
-      return `md-backspace:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-backspace:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

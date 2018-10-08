@@ -3,7 +3,7 @@
     name: 'md-wrap-text',
 
     serverCacheKey: props => {
-      return `md-wrap-text:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-wrap-text:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

@@ -3,7 +3,7 @@
     name: 'md-phone-missed',
 
     serverCacheKey: props => {
-      return `md-phone-missed:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-phone-missed:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

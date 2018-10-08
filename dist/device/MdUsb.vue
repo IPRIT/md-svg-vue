@@ -3,7 +3,7 @@
     name: 'md-usb',
 
     serverCacheKey: props => {
-      return `md-usb:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-usb:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

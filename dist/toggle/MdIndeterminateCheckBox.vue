@@ -3,7 +3,7 @@
     name: 'md-indeterminate-check-box',
 
     serverCacheKey: props => {
-      return `md-indeterminate-check-box:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-indeterminate-check-box:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

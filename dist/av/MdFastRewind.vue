@@ -3,7 +3,7 @@
     name: 'md-fast-rewind',
 
     serverCacheKey: props => {
-      return `md-fast-rewind:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-fast-rewind:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

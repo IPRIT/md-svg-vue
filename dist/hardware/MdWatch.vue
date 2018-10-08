@@ -3,7 +3,7 @@
     name: 'md-watch',
 
     serverCacheKey: props => {
-      return `md-watch:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-watch:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

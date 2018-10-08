@@ -3,7 +3,7 @@
     name: 'md-attach-file',
 
     serverCacheKey: props => {
-      return `md-attach-file:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-attach-file:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

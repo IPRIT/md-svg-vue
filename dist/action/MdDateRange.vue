@@ -3,7 +3,7 @@
     name: 'md-date-range',
 
     serverCacheKey: props => {
-      return `md-date-range:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-date-range:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {

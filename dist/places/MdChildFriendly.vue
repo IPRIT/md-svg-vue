@@ -3,7 +3,7 @@
     name: 'md-child-friendly',
 
     serverCacheKey: props => {
-      return `md-child-friendly:${this.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
+      return `md-child-friendly:${props.color || 'default'}:${props.width}:${props.height}:${props.className || 'icon'}`;
     },
 
     props: {
