@@ -10,8 +10,7 @@ Advantages of this module in comparing to fonts, svg sprites, etc.
 5. You can extend existing iconset with your icons. Just clone this repo and load your icons (each icon in separate svg file) to corresponding path.
 
 This project could not have been possible without [BrowserStack](https://www.browserstack.com/).
-![BrowserStack Logo](https://www.browserstack.com/images/layout/browserstack-logo-600x315.png)
-
+<a href="https://www.browserstack.com/">![BrowserStack](https://www.browserstack.com/images/layout/browserstack-logo-600x315.png)]</a>
 
 ## How to use
 
