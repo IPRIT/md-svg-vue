@@ -1,4 +1,6 @@
 <script>
+  import { h } from 'vue';
+
   export default {
     name: 'md-exposure-zero',
 
@@ -23,7 +25,7 @@
       color: String
     },
 
-    render (h) {
+    render () {
       const data = {
         staticClass: 'icon md-icon md-exposure-zero',
         'class': this.className,

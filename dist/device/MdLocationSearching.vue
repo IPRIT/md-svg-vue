@@ -1,4 +1,6 @@
 <script>
+  import { h } from 'vue';
+
   export default {
     name: 'md-location-searching',
 
@@ -23,7 +25,7 @@
       color: String
     },
 
-    render (h) {
+    render () {
       const data = {
         staticClass: 'icon md-icon md-location-searching',
         'class': this.className,

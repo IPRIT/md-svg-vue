@@ -1,5 +1,5 @@
-export MdAccessAlarm from './MdAccessAlarm.vue';
 export MdAccessAlarms from './MdAccessAlarms.vue';
+export MdAccessAlarm from './MdAccessAlarm.vue';
 export MdAccessTime from './MdAccessTime.vue';
 export MdAddAlarm from './MdAddAlarm.vue';
 export MdAirplanemodeActive from './MdAirplanemodeActive.vue';
